@@ -51,7 +51,7 @@ main{
     background-image: url(./imgs/main/menubg.png);
     opacity: 0.9;
     z-index: -1;
-    transition: all 0.6ms;
+    transition: all 500ms;
     height: 0px;
     overflow: hidden;
 }
@@ -79,9 +79,11 @@ main{
     font-weight: 400;
     line-height: 16px; /* 100% */
 }
-#header>nav>ul>li>a:hover{
-    color: var(--gray_100);
+#header>nav>ul>li>a.hover{
     border-bottom: 3px solid var(--gray_100);
+}
+#header>nav>ul>li>ul>li>a.hover{
+    color: var(--gray_100);
 }
 #header>nav>ul>li{
     position: relative;
@@ -92,7 +94,7 @@ main{
     position: absolute;
     top: 50px;
     left: -10px;
-    transition: 0.6ms;
+    transition: all 600ms;
     height: 0px;
     overflow: hidden;
 }
@@ -105,7 +107,6 @@ main{
     line-height: 16px; /* 100% */
     display: inline-block;
     padding: 12px 0px;
-
 }
 .icons{
     width: 20%;
