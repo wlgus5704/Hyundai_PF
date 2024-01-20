@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'EsaManru';
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.ttf') format("truetype");
+    font-display: swap;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +27,7 @@
 
 
     /* font */
+    --kor_title:"EsaManru";
     --kor: "Noto Sans KR";
     --eng: "Orbitron";
 }
@@ -24,6 +35,7 @@ body{
     width: 1920px;
     background-color: #101527;
 }
+/* --------------------- Main */
 main{
     width: 100%;
     height: 980px; 
@@ -124,10 +136,42 @@ main{
 /* slide */
 main>.slidewarp{
     display: flex;
+    overflow: hidden;
 }
-main>.slidewarp>.slide2{
-    background-image: url(./imgs/main/Main_V2.jpg);
+
+.slidewarp>.slide5{
+    position: relative;
 }
+.slide5>.title{
+    position: absolute;
+    top: 380px;
+    left: 833px;
+    color: var(--gray_100);
+    font-family: var(--eng);
+    font-size: 48px;
+    font-weight: 700;
+}
+.slide5>.subtitle{
+    position: absolute;
+    top: 442px;
+    left: 886px;
+    color: #475A5F;
+    font-weight: 600;
+    font-style: 18px;
+    font-family: var(--eng);
+}
+.slide5>a{
+    position: absolute;
+    top: 506px;
+    left: 887px;
+    color: #899294;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #465559;
+    font-family: var(--kor);
+    padding: 2px;
+}
+
 
 /* cursor */
 .pointers{
@@ -150,12 +194,99 @@ main>.slidewarp>.slide2{
 .pointers>.cursor>a{
     display: inline-block;
     width: 12px;height: 12px;
+    cursor:pointer;
 }
-
+.pointers>div{
+    border: 1px solid var(--gray_200);
+}
 .on{
     background-color: rgba(147, 152, 169, 0.6);
     border: 1.5px solid var(--gray_100);
 }
-.off{
-    border: 1px solid var(--gray_200);
+
+
+/* --------------------- Hydro */
+.hydro{
+    margin:160px 0px;
+    width: 1920px;
+    height: 1100px;
+    text-align: center;
+}
+.hydro>h1{
+    color: var(--gray_100);
+    font-family: var(--kor_title);
+    font-size: 42px;
+    padding: 14px;    
+}
+.hydro>h2{
+    color: var(--gray_300, #9398A9);
+    font-family: var(--kor);
+    font-size: 20px;
+    font-weight: 400;
+}
+.hydrowrap{
+    display: flex;
+    margin-top: 140px;
+}
+.buttonwrap{
+    display: flex;
+    display: none;
+}
+.buttonwrap>div{
+    text-align: center;
+}
+.hydro_detail{
+    padding-right: 100px;
+}
+.hydrowrap>div{
+    width: 525px;
+    height: 728px;
+}
+.hydrowrap>div h3 span{
+    font-family: var(--eng);
+}
+.hydrowrap>div h3{
+    color: var(--gray_100, #F4F4F4);
+    font-family: var(--kor_title);
+    font-size: 18px;
+    padding: 6px;
+}
+.hydrowrap>div h4{
+    color: var(--gray_500, #575663);
+    font-family: var(--eng);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+}
+/* .hydrowrap>div h3{
+    font-family: var(--kor_title);
+    color: var(--gray_100, #F4F4F4);
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.hydrowrap>div h4{
+    color: var(--gray_200, #9B9B9B);
+    font-family: var(--eng);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px; 
+    margin-bottom: 60px;
+}
+.buttonwrap>div a{
+    color: var(--gray_100, #F4F4F4);
+    font-family: var(--kor);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52px;
+    display: inline-block;
+    width: 245px;
+    height: 55px;
+    background-image: url(./imgs/Main/Hydro/hydro_def.png);
+} */
+.buttonwrap>div a:hover{
+    color: var(--mint_100);
+    background-image: url(./imgs/Main/Hydro/hydro_hover.png);
 }

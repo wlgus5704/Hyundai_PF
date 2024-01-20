@@ -41,10 +41,58 @@ window.onload = function(){
             });
         }); 
     });
-   
+    
+
+    //slide cursors
+    const cursors = document.querySelectorAll('.pointers>div');
+
+    //slide
+    const slider = document.querySelector('.slidewarp'); 
+    let clone = slider.firstElementChild.cloneNode(true); 
+    slider.append(clone); 
+    let index =0;
+
+    setInterval(() => {
+
+        for(let i =0; i<cursors.length; i++){
+            cursors[i].classList.remove('on');   
+        }
+
+        index++;
+
+        slider.style.marginLeft = -index * 1920 + 'px';
+        slider.style.transition = "all 1s"
+        cursors[index % cursors.length].classList.add('on'); 
+        // 배열 길이를 초과하는 인덱스를 처리 
+        
+        if(index == cursors.length){
+            setTimeout(() => {
+                slider.style.marginLeft = '0';
+                slider.style.transition = '0s';
+                index = 0;
+            },1000);
+        }
+
+    
+    }, 6000);
+
+
+
+    ////slide cursors event
+
+    for (let i = 0; i < cursors.length; i++) {
+        cursors[i].addEventListener("click", function() {
+            for (let j = 0; j < cursors.length; j++) {
+                cursors[j].classList.remove('on');
+            }
+            cursors[i].classList.add('on');
+            slider.style.marginLeft = `-${1920 * i}px`;
+            slider.style.transition = '1s';
+            index = i;
+        });
+    }
+    //---------------------------- Main Fin ---------------------------
 
     
 
-
-
-};
+}; //end
