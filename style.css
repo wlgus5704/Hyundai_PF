@@ -554,6 +554,7 @@ footer>.down>.icons{
     height: 66px;
     display: flex;
     align-items: center;
+    margin-left: 46px;
 }
 footer>.down>.icons>span{
     align-items:end;
