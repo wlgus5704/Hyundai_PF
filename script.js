@@ -93,6 +93,60 @@ window.onload = function(){
     }
     //---------------------------- Main Fin ---------------------------
 
+
+    //banner btn
+    let icons = document.querySelectorAll('.btns>div>a>i');
+
+    function handleMouseEnter(event) {
+        event.currentTarget.querySelector('i').classList.add('fa-beat');
+    }
+
+    function handleMouseLeave(event) {
+        event.currentTarget.querySelector('i').classList.remove('fa-beat');
+    }
+
+    icons[0].parentElement.addEventListener('mouseenter', handleMouseEnter);
+    icons[0].parentElement.addEventListener('mouseleave', handleMouseLeave);
+
+    icons[1].parentElement.addEventListener('mouseenter', handleMouseEnter);
+    icons[1].parentElement.addEventListener('mouseleave', handleMouseLeave);
+    //---------------------------- Banner Fin ---------------------------
+
+    
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //footer
+    let familysite = document.querySelector('.familysite');
+    let check = document.querySelector('.drop');
+    let arrow = document.querySelector('.familysite>img');
+
+    familysite.addEventListener('click', function() {
+        
+        // .drop 요소에 active 클래스가 있는지 확인
+        if (!check.classList.contains('active')) {
+            // 없으면 추가
+            check.classList.add('active');
+            arrow.style.transform = 'rotate(180deg)';
+        
+        } else {
+            // 있으면 제거
+            check.classList.remove('active');
+            arrow.style.transform = 'rotate(0deg)';
+        }
+    });
 }; //end
