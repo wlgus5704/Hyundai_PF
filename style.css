@@ -218,6 +218,7 @@ main>.slidewarp{
 }
 .hydrowrap{
     display: flex;
+    margin: 0px auto;
     margin-top: 140px;
 }
 .hydrowrap div>.buttonwrap{
@@ -225,16 +226,6 @@ main>.slidewarp{
 }
 .buttonwrap{
     display: flex;
-}
-.buttonwrap>div{
-    text-align: center;
-}
-.hydro_detail{
-    padding-right: 100px;
-}
-.hydrowrap>div{
-    width: 525px;
-    height: 728px;
 }
 .hydrowrap>div h3 span{
     font-family: var(--eng);
@@ -246,6 +237,16 @@ main>.slidewarp{
     padding: 6px;
     font-weight: 300;
 }
+.hydrowrap>.hydro_LeftButton{
+    margin-left: 65px;
+    margin-top: 100px;
+    width: 44px;height: 100px;
+}
+.hydrowrap>.hydro_RightButton {
+    margin-right: 65px;
+    margin-top: 100px;
+    width: 44px;height: 100px;
+}
 .hydrowrap>div h4{
     color: var(--gray_500, #575663);
     font-family: var(--eng);
@@ -253,17 +254,72 @@ main>.slidewarp{
     font-weight: 600;
     line-height: 22px;
 }
+.hydrowrap>.carswrap{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.hydrowrap>.carswrap>div{
+    align-items: center;
+    width: 420px;
+    overflow: hidden;
+    text-align: center;
+}
+.hydrowrap>.carswrap>div img{
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    opacity: 50%;
+    margin: 0 -72px;
+}
+.hydrowrap>.carswrap>.hydro_on{
+    margin: 0 auto;
+    margin-top: -100px;
+    width: 660px;
+}
+.hydrowrap>.carswrap>.hydro_on>img{
+    display: block;
+    width: 840px;
+    height: auto;
+    opacity: 1;
+}
+.hydrowrap>.carswrap>.hydro_on>.buttonwrap{
+    display: flex;
+    text-align: center;
+    height: 55px;
+}
+.hydrowrap>.carswrap>.hydro_on>.buttonwrap>div{
+    margin: 0 auto;
+    background-image: url(./imgs/Main/Hydro/hydro_def.png);
+    width: 245px;
+    height: 55px;
+}
+.hydrowrap>.carswrap>.hydro_on>.buttonwrap>div:hover{
+    background-image: url(./imgs/Main/Hydro/hydro_hover.png);
+}
+.hydrowrap>.carswrap>.hydro_on>.buttonwrap>div>a{
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    line-height: 3.6;
+    color: var(--gray_100);
+}
+.hydrowrap>.carswrap>.hydro_on>.buttonwrap>div>a:hover{
+    color: var(--mint_100);
+}
+.hydrowrap>.carswrap>.hydro_off{
+    display: none;
+}
 
-
-/* .hydrowrap>div h3{
+.hydrowrap>.carswrap>.hydro_on h3{
     font-family: var(--kor_title);
     color: var(--gray_100, #F4F4F4);
     font-size: 28px;
     line-height: 28px;
     margin-bottom: 30px;
+    text-shadow: 0 0 10px var(--mint_100);
 }
-
-.hydrowrap>div h4{
+.hydrowrap>.carswrap>.hydro_on h4{
     color: var(--gray_200, #9B9B9B);
     font-family: var(--eng);
     font-size: 16px;
@@ -271,23 +327,6 @@ main>.slidewarp{
     line-height: 20px; 
     margin-bottom: 60px;
 }
-.buttonwrap>div a{
-    color: var(--gray_100, #F4F4F4);
-    font-family: var(--kor);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 52px;
-    display: inline-block;
-    width: 245px;
-    height: 55px;
-    background-image: url(./imgs/Main/Hydro/hydro_def.png);
-} */
-.buttonwrap>div a:hover{
-    color: var(--mint_100);
-    background-image: url(./imgs/Main/Hydro/hydro_hover.png);
-}
-
 
 
 
@@ -568,7 +607,7 @@ footer>.down>.icons>span{
 }
 .icons>.familysite{
     width: 284px; height: 44px;
-    border: 0.5px solid var(--gray_200);
+    border: 0.5px solid var(--gray_400);
     color: var(--gray_100);
     font-family: var(--kor);
     font-size: 14px;
@@ -586,7 +625,7 @@ footer>.down>.icons>span{
 .icons>.familysite>.drop{
     position: absolute;
     background-color: #090B15;
-    border: 0.5px solid var(--gray_200);
+    border: 0.5px solid var(--gray_400);
     border-bottom: 0;
     top: -452px;
     left: -1px;

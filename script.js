@@ -112,11 +112,28 @@ window.onload = function(){
     icons[1].parentElement.addEventListener('mouseleave', handleMouseLeave);
     //---------------------------- Banner Fin ---------------------------
 
+    //hydro_hover
+    let leftBtn = document.querySelector('.hydro_LeftButton>a>img');
+    let rightBtn = document.querySelector('.hydro_RightButton>a>img');
+
+    leftBtn.addEventListener('mouseover', function(){
+        leftBtn.src = './imgs/Main/Hydro/Left_hover.png';
+    });
+    leftBtn.addEventListener('mouseout', function(){
+        leftBtn.src = './imgs/Main/Hydro/Left.png';
+    });
+    rightBtn.addEventListener('mouseover', function(){
+        rightBtn.src = './imgs/Main/Hydro/Right_hover.png';
+    });
+    rightBtn.addEventListener('mouseout', function(){
+        rightBtn.src = './imgs/Main/Hydro/Right.png';
+    });
     
+
+    const cars = document.querySelectorAll('.carswrap>div');
+    let cindex =0;
+
     
-
-
-
 
 
 
