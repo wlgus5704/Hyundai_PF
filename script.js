@@ -112,28 +112,113 @@ window.onload = function(){
     icons[1].parentElement.addEventListener('mouseleave', handleMouseLeave);
     //---------------------------- Banner Fin ---------------------------
 
-    //hydro_hover
-    let leftBtn = document.querySelector('.hydro_LeftButton>a>img');
-    let rightBtn = document.querySelector('.hydro_RightButton>a>img');
-
-    leftBtn.addEventListener('mouseover', function(){
-        leftBtn.src = './imgs/Main/Hydro/Left_hover.png';
-    });
-    leftBtn.addEventListener('mouseout', function(){
-        leftBtn.src = './imgs/Main/Hydro/Left.png';
-    });
-    rightBtn.addEventListener('mouseover', function(){
-        rightBtn.src = './imgs/Main/Hydro/Right_hover.png';
-    });
-    rightBtn.addEventListener('mouseout', function(){
-        rightBtn.src = './imgs/Main/Hydro/Right.png';
-    });
     
 
-    const cars = document.querySelectorAll('.carswrap>div');
-    let cindex =0;
+    let cars = document.querySelectorAll('.carswrap>div');
+    let carswrap = document.querySelector('.carswrap');
+    let slidecount = cars.length;
+    let slidewidth = 480;
+    let currentWidth =2880;
+    let cindex =7;
 
+
+    for(let i =0; i<slidecount; i++){
+        let newSlide = cars[i].cloneNode(true);
+        // newSlide.classList.add('hydro_off');
+        carswrap.appendChild(newSlide);
+    };
+    for(let i =slidecount-1; i>=0; i--){
+        let newSlide = cars[i].cloneNode(true);
+        // newSlide.classList.add('hydro_off');
+        carswrap.prepend(newSlide);
+        
+    };
+
+   
+    cars[1].classList.add('hydro_on');
     
+    cars = document.querySelectorAll('.carswrap>div');
+  
+    carswrap.style.transform = `translateX(-${currentWidth}px)`;
+
+
+    setInterval(()=>{
+        carswrap.style.transition = 'all 0.6s';
+        currentWidth += slidewidth;
+        carswrap.style.transform = `translateX(-${currentWidth}px)`;
+        cars[cindex].classList.remove('hydro_on');
+        cindex+=1;
+        cars[cindex].classList.add('hydro_on');
+
+        console.log(cindex);
+
+        if(cindex == 13){
+            setTimeout(() => {
+                carswrap.style.transition = 'all 0s';
+                currentWidth = 2880;
+                carswrap.style.transform = `translateX(-${currentWidth}px)`;
+                cars[cindex].classList.remove('hydro_on');
+                cindex =7;
+                cars[cindex].classList.add('hydro_on');
+
+            },600);
+            
+        };
+    },6000);
+
+    let leftBtn = document.querySelector('.hydro_LeftButton>a');
+    let rightBtn = document.querySelector('.hydro_RightButton>a');
+
+    leftBtn.addEventListener('click', function(){
+        event.preventDefault();
+        carswrap.style.transition = 'all 0.6s';
+        currentWidth += slidewidth;
+        carswrap.style.transform = `translateX(-${currentWidth}px)`;
+        cars[cindex].classList.remove('hydro_on');
+        cindex+=1;
+        cars[cindex].classList.add('hydro_on');
+
+        if(cindex == 13){
+            setTimeout(() => {
+                carswrap.style.transition = 'all 0s';
+                currentWidth = 2880;
+                carswrap.style.transform = `translateX(-${currentWidth}px)`;
+                cars[cindex].classList.remove('hydro_on');
+                cindex =7;
+                cars[cindex].classList.add('hydro_on');
+
+            },600);
+            
+        };
+    });
+
+    rightBtn.addEventListener('click', function(){
+        event.preventDefault();
+        carswrap.style.transition = 'all 0.6s';
+        currentWidth -= slidewidth;
+        carswrap.style.transform = `translateX(-${currentWidth}px)`;
+        setTimeout(() => {
+            cars[cindex].classList.remove('hydro_on');
+            cindex-=1;
+            cars[cindex].classList.add('hydro_on');
+        },100);
+
+        if(cindex == 2){
+            setTimeout(() => {
+                carswrap.style.transition = 'all 0s';
+                currentWidth = 2880;
+                carswrap.style.transform = `translateX(-${currentWidth}px)`;
+                cars[cindex].classList.remove('hydro_on');
+                cindex =7;
+                cars[cindex].classList.add('hydro_on');
+
+            },600);
+            
+        };
+        
+    });
+    //---------------------------- Sllide Fin ---------------------------
+
 
 
 
@@ -166,4 +251,5 @@ window.onload = function(){
             arrow.style.transform = 'rotate(0deg)';
         }
     });
+
 }; //end
