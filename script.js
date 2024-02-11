@@ -91,7 +91,7 @@ window.onload = function(){
             index = i;
         });
     }
-    //---------------------------- Main Fin ---------------------------
+    //---------------------------- MainV Fin ---------------------------
 
 
     //banner btn
@@ -150,7 +150,6 @@ window.onload = function(){
         cindex+=1;
         cars[cindex].classList.add('hydro_on');
 
-        console.log(cindex);
 
         if(cindex == 13){
             setTimeout(() => {
@@ -230,6 +229,67 @@ window.onload = function(){
 
 
 
+    //events
+    
+    let eventWrap = document.querySelector('.eventswrap>ul');
+    let eventCon = document.querySelectorAll('.eventswrap>ul>li');
+    let ELength = eventCon.length;
+    const Elbtn = document.querySelector('.lbtn');
+    const Erbtn = document.querySelector('.rbtn');
+    let Eindex = 1;
+
+    eventWrap.style.marginLeft = `-1640px`;
+
+    for (let i = 0; i < ELength - 3; i++) {
+        let con = eventCon[i].cloneNode(true);
+        eventWrap.appendChild(con);
+    }
+
+    for (let i = ELength - 1; i >= 3; i--) {
+        let con = eventCon[i].cloneNode(true);
+        eventWrap.prepend(con);
+    }
+
+    Elbtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        Eindex++;
+        eventWrap.style.marginLeft = `-${Eindex * 1640}px`;
+        console.log(Eindex);
+    
+        if (Eindex == 3) {
+            setTimeout(() => {
+                eventWrap.style.transition = "0s";
+                Eindex = 1;
+                eventWrap.style.marginLeft = `-${Eindex * 1640}px`;
+                setTimeout(() => {
+                    eventWrap.style.transition = "all 0.6s"; //복원
+                }, 10);
+            }, 600);
+        };
+    });
+    
+    Erbtn.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        Eindex--;
+        eventWrap.style.marginLeft = `-${Eindex * 1640}px`;
+        console.log(Eindex);
+
+        if (Eindex == 0) {
+            setTimeout(() => {
+                eventWrap.style.transition = "0s";
+                Eindex = 2;
+                eventWrap.style.marginLeft = `-${Eindex * 1640}px`;
+                setTimeout(() => {
+                    eventWrap.style.transition = "all 0.6s"; //복원
+                }, 10);
+            }, 600);
+        };
+       
+    });
+
+
+    //---------------------------- Events Fin ---------------------------
 
 
     //footer
