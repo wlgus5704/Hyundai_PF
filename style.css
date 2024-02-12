@@ -201,7 +201,7 @@ main>.slidewarp{
 
 /* --------------------- Hydro */
 .hydro{
-    margin:160px 0px;
+    margin-top: 160px;
     width: 1920px;
     height: 1100px;
     text-align: center;
@@ -370,10 +370,200 @@ main>.slidewarp{
     width: 1920px;
     height: 1080px;
     margin-top: 90px;
-    margin-bottom: 100px;
 }
+.best>h1{
+    color: var(--gray_100);
+    font-style: 42px;
+    font-weight: 500;
+    font-family: var(--eng);
+    text-align: center;
+}
+.best>.bestNav{
+    padding-top: 28px;
+    display: flex;
+    width: 600px; height: 50px;
+    border-bottom: var(--gray_400) 1px solid;
+}
+.best>.bestNav>div{
+    width: 25%;
+}
+.best>.bestNav>div>a{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-family: var(--kor);
+    font-size: 20px;
+    color: var(--gray_400);
+}
+.best>.bestNav>div>.bestOn{
+    color: var(--gray_100);
+    border-bottom: var(--gray_100) 3px solid;
+}
+.best>.bestwrap{
+    width: 1640px; height: 860px;
+    display: flex;
+    box-sizing: border-box;
+}
+.best>.bestwrap>.Blbtn>a{
+    display: inline-block;
+    width: 80px; 
+    height: 860px;
+    margin-top: 224px;
+    background-image: url(./imgs/Main/Hydro/Left.png);
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-right: 16px;
+}
+.best>.bestwrap>.Blbtn>a:hover{
+    background-image: url(./imgs/Main/Hydro/Left_hover.png);
+}
+.best>.bestwrap>.Brbtn>a{
+    display: inline-block;
+    width: 80px;
+    height: 860px;
+    margin-top: 224px;
+    text-align: center;
+    background-image: url(./imgs/Main/Hydro/Right.png);
+    background-repeat: no-repeat;
+    margin-right: 0;
+    margin-left: 16px;
+}
+.best>.bestwrap>.Brbtn>a:hover{
+    background-image: url(./imgs/Main/Hydro/Right_hover.png);
+}
+.best>.bestwrap>.bestConwrap{
+    width: 1410px;
+    height: 860px;
+    padding-bottom: 104px;
+    padding-top: 54px;
+    position: relative;
+    
+}
+.best>.bestwrap>.bestConwrap>div{
+    width: 100%;height: 100vh;
+    display: flex;
+    position: absolute;
+}
+.best>.bestwrap>.bestConwrap>div>div{
+    width: 33.33%;
+    height: 860px;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.best>.bestwrap>.bestConwrap>div>div>a>h3{
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-style: 20px;
+    font-family: var(--kor);
+    color: var(--gray_100);
+    background-image: url(./imgs/Main/Best/Title_img.png);
+    border-image-repeat: no-repeat;
+    width: 414px;
+    height: 108px;
+    line-height: 5.5;
+    float: right;
 
+}
+.best>.bestwrap>.bestConwrap>div>div>a:hover>h3{
+    color: var(--mint_100);
+    background-image: url(./imgs/Main/Best/Title_img_hover.png);
+}
+.best>.bestwrap>.bestConwrap>div>div>ul{
+    display: flex;
+    width: 300px; height: 115px;
+    text-align: left;
 
+}
+.best>.bestwrap>.bestConwrap>div>div>ul>li>h4{
+    font-family: var(--kor);
+    color: var(--gray_400);
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.best>.bestwrap>.bestConwrap>div>div>ul>li>p{
+    font-family: var(--kor);
+    color: var(--gray_100);
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+/* best con1 Img */
+#img1-1{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car1.png);
+}
+#img1-2{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-image: url(./imgs/Main/Best/best_car2.png);
+    background-repeat: no-repeat;
+}
+#img1-3{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-image: url(./imgs/Main/Best/best_car3.png);
+    background-repeat: no-repeat;
+} 
+#img2-1{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car2-1.png);
+}
+#img2-2{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car2-2.png);
+}
+#img2-3{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car2-3.png);
+}
+#img3-1{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car3-1.png);
+}
+#img3-2{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car3-2.png);
+}
+#img3-3{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car3-3.png);
+}
+#img4-1{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car4-1.png);
+}
+#img4-2{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car4-2.png);
+}
+#img4-3{
+    width: 470px; height: 420px;
+    margin-bottom: 14px;
+    background-repeat: no-repeat;
+    background-image: url(./imgs/Main/Best/best_car4-3.png);
+}
 
 /* --------------------- RECOM */
 .recom {
@@ -429,6 +619,10 @@ main>.slidewarp{
     background-image: url(./imgs/Main/Recom/button_hover.png);
     color: var(--mint_100);
 }
+
+/* shop */
+
+
 
 /* --------------------- EVENT */
 .events{

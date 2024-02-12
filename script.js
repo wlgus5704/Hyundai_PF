@@ -218,8 +218,68 @@ window.onload = function(){
     });
     //---------------------------- Sllide Fin ---------------------------
 
+    //best
+    let bestNav = document.querySelectorAll('.bestNav>div>a');
+    let bestCon = document.querySelectorAll('.bestConwrap>div');
+    let Blbtn = document.querySelector('.Blbtn');
+    let Brbtn = document.querySelector('.Brbtn');
+    let Bindex =0;
 
+  
 
+    bestCon[1].style.opacity = '0';
+    bestCon[2].style.opacity = '0';
+    bestCon[3].style.opacity = '0';
+    
+    for (let i = 0; i < bestNav.length; i++) {
+        bestNav[i].addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            for (let j = 0; j < bestCon.length; j++) {
+                bestCon[j].style.opacity = '0';
+                bestNav[j].classList.remove('bestOn');
+                bestCon[j].style.transition = 'all 0.6s';
+            }
+           
+            bestCon[i].style.opacity = '1';
+            bestNav[i].classList.add('bestOn');
+            Bindex = i; 
+        });
+    };
+
+    Blbtn.addEventListener('click', function(){
+        event.preventDefault();
+        --Bindex;
+        
+        if(Bindex == -1){
+            Bindex=3;
+        };
+        for(let i=0; i<bestCon.length; i++){
+            bestNav[i].classList.remove('bestOn');
+            bestCon[i].style.opacity = '0';
+            bestCon[i].style.transition = 'all 0.6s';
+        };
+        bestNav[Bindex].classList.add('bestOn');
+        bestCon[Bindex].style.opacity = '1';
+    });
+
+    Brbtn.addEventListener('click', function(){
+        event.preventDefault();
+        ++Bindex;
+        
+        if(Bindex == 4){
+            Bindex=0;
+        };
+        for(let i=0; i<bestCon.length; i++){
+            bestNav[i].classList.remove('bestOn');
+            bestCon[i].style.opacity = '0';
+            bestCon[i].style.transition = 'all 0.6s';
+        };
+        bestNav[Bindex].classList.add('bestOn');
+        bestCon[Bindex].style.opacity = '1';
+    });
+
+    
 
 
 
@@ -254,7 +314,6 @@ window.onload = function(){
         event.preventDefault();
         Eindex++;
         eventWrap.style.marginLeft = `-${Eindex * 1640}px`;
-        console.log(Eindex);
     
         if (Eindex == 3) {
             setTimeout(() => {
@@ -263,8 +322,8 @@ window.onload = function(){
                 eventWrap.style.marginLeft = `-${Eindex * 1640}px`;
                 setTimeout(() => {
                     eventWrap.style.transition = "all 0.6s"; //복원
-                }, 10);
-            }, 600);
+                }, 100);
+            }, 700);
         };
     });
     
@@ -273,7 +332,6 @@ window.onload = function(){
 
         Eindex--;
         eventWrap.style.marginLeft = `-${Eindex * 1640}px`;
-        console.log(Eindex);
 
         if (Eindex == 0) {
             setTimeout(() => {
@@ -282,7 +340,7 @@ window.onload = function(){
                 eventWrap.style.marginLeft = `-${Eindex * 1640}px`;
                 setTimeout(() => {
                     eventWrap.style.transition = "all 0.6s"; //복원
-                }, 10);
+                }, 100);
             }, 600);
         };
        
