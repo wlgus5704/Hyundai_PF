@@ -442,7 +442,7 @@ main>.slidewarp{
     
 }
 .best>.bestwrap>.bestConwrap>div{
-    width: 100%;height: 100vh;
+    width: 100%;height: 700px;
     display: flex;
     position: absolute;
 }
@@ -453,19 +453,22 @@ main>.slidewarp{
     overflow: hidden;
     box-sizing: border-box;
 }
+.best>.bestwrap>.bestConwrap>div>div>a{
+    width: 100%; height: 574px;
+    display: inline-block;
+}
 .best>.bestwrap>.bestConwrap>div>div>a>h3{
-    margin-bottom: 40px;
     font-weight: 600;
-    font-style: 20px;
+    font-size: 20px;
     font-family: var(--kor);
     color: var(--gray_100);
     background-image: url(./imgs/Main/Best/Title_img.png);
-    border-image-repeat: no-repeat;
+    background-repeat: no-repeat;
     width: 414px;
     height: 108px;
     line-height: 5.5;
     float: right;
-
+    margin-bottom: 0;
 }
 .best>.bestwrap>.bestConwrap>div>div>a:hover>h3{
     color: var(--mint_100);
@@ -475,7 +478,6 @@ main>.slidewarp{
     display: flex;
     width: 300px; height: 115px;
     text-align: left;
-
 }
 .best>.bestwrap>.bestConwrap>div>div>ul>li>h4{
     font-family: var(--kor);
@@ -569,7 +571,7 @@ main>.slidewarp{
 .recom {
     width: 1920px;
     height: 678px;
-    margin: 124px 0px;
+    margin-top: 124px;
     text-align: center;
     position: relative;
 }
@@ -621,9 +623,242 @@ main>.slidewarp{
 }
 
 /* shop */
+.shop{
+    width: 1640px; height: 1308px;
+    position: relative;
+}
+.shop>h1{
+    color: var(--gray_100);
+    font-family: var(--eng);
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 100px;
+}
+.shop>h2{
+    color: var(--gray_300);
+    font-weight: var(--kor);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 2;
+    padding-bottom: 90px;
+}
+.shop::after{
+    display: inline-block;
+    content: '';
+    width: 1920px;
+    height: 5px;
+    background: #4B4E5B;
+    position: absolute;
+    left: -140px; top: 326px;
+    z-index: 0;
+}
+.shopNav{
+    display: flex;
+}
+.shopNav>div>a{
+    display: inline-block;
+    text-align: center;
+    margin-top: -24px;
+    position: relative;
+    z-index: 1;
+}
+/* 기본 원 */
+.shopNav>div>a>.circle{
+    display: inline-block;
+    background: var(--gray_100);
+    width: 7px; height: 7px;
+    border-radius: 10px;
+}
+.shopNav>div.shopOn>a>.circle{
+    width: 17px;
+    height: 17px;
+    background-color: #09F6F950;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--mint_100);
+}
+.shopNav>div.shopOn>a>.circle::after{
+    position: relative;
+    content: '';
+    top: 8%; left: 45%;
+    position: absolute;
+    background: var(--gray_100);
+    width: 7px; height: 7px;
+    border-radius: 10px;
+}
+.shopNav>div>a>p{
+    font-family: var(--kor);
+    color: var(--gray_300);
+    font-style: 22px;
+    font-weight: 500;
+    margin-top: 24px;
+    font-family: var(--kor);
+}
+.shopNav>div.shopOn>a>p{
+    font-family: var(--kor);
+    color: var(--gray_100);
+    font-style: 22px;
+    font-weight: 500;
+    margin-top: 24px;
+    font-family: var(--kor);
+    text-shadow: 0 0 10px var(--mint_100);
+}
+.shopshowwarp{
+    height: 920px;
+    width: 1640px;
+    overflow: hidden;
+}
+.shopwarp{
+    height: 920px;
+    display: flex;
+    margin-left: -4650px;
+}
+.Slbtn{
+    display: inline-block;
+    position: absolute;
+    left: 400px; top: 800px;
+    width: 50px; height: 110px;
+    background-image: url(./imgs/Main/Hydro/Left.png);
+    z-index: 2;
+}
+.Slbtn:hover{
+    background-image: url(./imgs/Main/Hydro/Left_hover.png);
+}
+.Srbtn{
+    display: inline-block;
+    position: absolute;
+    width: 50px; height: 110px;
+    right: 400px; top: 800px;
+    background-image: url(./imgs/Main/Hydro/Right.png);
+    z-index: 2;
+}
+.Srbtn:hover{
+    background-image: url(./imgs/Main/Hydro/Right_hover.png);
+}
+.shopwarp>div{
+    display: flex;
+}
+.shopwarp>div>div.shopConOn{
+    width: 1020px;
+    margin-top: 176px;
+}
+.shopwarp>div>div.shopConOn>div{
+    background-color: #363946;
+    width: 555px; height: 545px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 30px #15435a;
+}
+.shopwarp>div>div.shopConOn>h5{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--gray_100);
+}
+.shopwarp>div>div.shopConOn>p{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--gray_300);
 
+}
+.shopwarp>div>div{
+    text-align: center;
+    margin-top: 296px;
+}
+.shopwarp>div>div>div{
+    width: 310px; height: 305px;
+    background-color: #2A2E3D;
+    border-radius: 300px;
+    margin-bottom: 40px;
+}
+.shopwarp>div>div>h5{
+    font-family: var(--kor);
+    color: var(--gray_200);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.shopwarp>div>div>p{
+    font-family: var(--kor);
+    color: var(--gray_200);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray_500);
+}
 
-
+/* img */
+#gift1-1{
+    background-image: url(./imgs/Main/Shop/gift1-1.png);
+}
+#gift1-2{
+    background-image: url(./imgs/Main/Shop/gift1-2.png);
+}
+#gift1-3{
+    background-image: url(./imgs/Main/Shop/gift1-3.png);
+}
+#gift1-4{
+    background-image: url(./imgs/Main/Shop/gift1-4.png);
+}
+#gift1-5{
+    background-image: url(./imgs/Main/Shop/gift1-5.png);
+}
+#gift1-6{
+    background-image: url(./imgs/Main/Shop/gift1-6.png);
+}
+#point1-1{
+    background-image: url(./imgs/Main/Shop/point1-1.png);
+}
+#point1-2{
+    background-image: url(./imgs/Main/Shop/point1-2.png);
+}
+#point1-3{
+    background-image: url(./imgs/Main/Shop/point1-3.png);
+}
+#point1-4{
+    background-image: url(./imgs/Main/Shop/point1-4.png);
+}
+#point1-5{
+    background-image: url(./imgs/Main/Shop/point1-5.png);
+}
+#point1-6{
+    background-image: url(./imgs/Main/Shop/point1-6.png);
+}
+#pro1-1{
+    background-image: url(./imgs/Main/Shop/pro1-1.png);
+}
+#pro1-2{
+    background-image: url(./imgs/Main/Shop/pro1-2.png);
+}
+#pro1-3{
+    background-image: url(./imgs/Main/Shop/pro1-3.png);
+}
+#pro1-4{
+    background-image: url(./imgs/Main/Shop/pro1-4.png);
+}
+#pro1-5{
+    background-image: url(./imgs/Main/Shop/pro1-5.png);
+}
+#pro1-6{
+    background-image: url(./imgs/Main/Shop/pro1-6.png);
+}
+#arti1-1{
+    background-image: url(./imgs/Main/Shop/arti1-1.png);
+}
+#arti1-2{
+    background-image: url(./imgs/Main/Shop/arti1-2.png);
+}
+#arti1-3{
+    background-image: url(./imgs/Main/Shop/arti1-3.png);
+}
+#arti1-4{
+    background-image: url(./imgs/Main/Shop/arti1-4.png);
+}
+#arti1-5{
+    background-image: url(./imgs/Main/Shop/arti1-5.png);
+}
+#arti1-6{
+    background-image: url(./imgs/Main/Shop/arti1-6.png);
+}
 /* --------------------- EVENT */
 .events{
     width: 1920px; height: 850px;

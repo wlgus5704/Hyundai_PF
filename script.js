@@ -225,8 +225,14 @@ window.onload = function(){
     let Brbtn = document.querySelector('.Brbtn');
     let Bindex =0;
 
+    let NoA = document.querySelectorAll('.bestConwrap>div>div>a');
+    for(let i =0; i<NoA.length; i++){
+        NoA[i].addEventListener('click', function(){
+            event.preventDefault();
+        });
+    };
   
-
+    bestCon[0].style.zIndex = '1';
     bestCon[1].style.opacity = '0';
     bestCon[2].style.opacity = '0';
     bestCon[3].style.opacity = '0';
@@ -237,11 +243,13 @@ window.onload = function(){
             
             for (let j = 0; j < bestCon.length; j++) {
                 bestCon[j].style.opacity = '0';
+                bestCon[j].style.zIndex = '0';
                 bestNav[j].classList.remove('bestOn');
                 bestCon[j].style.transition = 'all 0.6s';
             }
            
             bestCon[i].style.opacity = '1';
+            bestCon[i].style.zIndex = '1';
             bestNav[i].classList.add('bestOn');
             Bindex = i; 
         });
@@ -257,10 +265,12 @@ window.onload = function(){
         for(let i=0; i<bestCon.length; i++){
             bestNav[i].classList.remove('bestOn');
             bestCon[i].style.opacity = '0';
+            bestCon[i].style.zIndex = '0';
             bestCon[i].style.transition = 'all 0.6s';
         };
         bestNav[Bindex].classList.add('bestOn');
         bestCon[Bindex].style.opacity = '1';
+        bestCon[Bindex].style.zIndex = '1';
     });
 
     Brbtn.addEventListener('click', function(){
@@ -273,20 +283,207 @@ window.onload = function(){
         for(let i=0; i<bestCon.length; i++){
             bestNav[i].classList.remove('bestOn');
             bestCon[i].style.opacity = '0';
+            bestCon[i].style.zIndex = '0';
             bestCon[i].style.transition = 'all 0.6s';
         };
         bestNav[Bindex].classList.add('bestOn');
         bestCon[Bindex].style.opacity = '1';
+        bestCon[Bindex].style.zIndex = '1';
+    });
+
+    //shop
+    let shopNav = document.querySelectorAll('.shopNav>div');
+    let shopWarp = document.querySelector('.shopshowwarp>.shopwarp');
+    let shopCon = document.querySelectorAll('.shopshowwarp>.shopwarp>div>div');
+    let wrapIndex =0;
+    let conIndex =4;
+
+    const Slbtn = document.querySelector('.shop>.Slbtn');
+    const Srbtn = document.querySelector('.shop>.Srbtn');
+    let currentIndex = 16;
+    let currentmargin = 4650;
+    let navIndex =2;
+
+    shopWarp.style.transition ='all 0.6s';
+
+    shopNav[0].addEventListener('click', function(){
+        event.preventDefault();
+        
+        for(let i =0; i<shopNav.length; i++){
+            shopNav[i].classList.remove('shopOn');
+        };
+        for(let i =0; i<shopCon.length; i++){
+            shopCon[i].classList.remove('shopConOn');
+        };
+        shopNav[0].classList.add('shopOn');
+        wrapIndex= 930;
+        currentmargin=wrapIndex;
+        shopWarp.style.marginLeft= `-${wrapIndex}px`;
+
+        conIndex=4;
+        currentIndex=conIndex;
+        shopCon[conIndex].classList.add('shopConOn');
+        
+    });
+    shopNav[1].addEventListener('click', function(){
+        event.preventDefault();
+        wrapIndex=1860+930;
+        currentmargin=wrapIndex;
+        for(let i =0; i<shopNav.length; i++){
+            shopNav[i].classList.remove('shopOn');
+        };
+        for(let i =0; i<shopCon.length; i++){
+            shopCon[i].classList.remove('shopConOn');
+        };
+
+        shopNav[1].classList.add('shopOn');
+        shopWarp.style.marginLeft= `-${wrapIndex}px`;
+        conIndex=10;
+        currentIndex=conIndex;
+        shopCon[conIndex].classList.add('shopConOn');
+    });
+
+    shopNav[2].addEventListener('click', function(){
+        event.preventDefault();
+        wrapIndex=1860*2+930;
+        currentmargin=wrapIndex;
+        for(let i =0; i<shopNav.length; i++){
+            shopNav[i].classList.remove('shopOn');
+        };
+        for(let i =0; i<shopCon.length; i++){
+            shopCon[i].classList.remove('shopConOn');
+        };
+        shopNav[2].classList.add('shopOn');
+        shopWarp.style.marginLeft= `-${wrapIndex}px`;
+        conIndex=16;
+        currentIndex=conIndex;
+        shopCon[conIndex].classList.add('shopConOn');
+    });
+
+    shopNav[3].addEventListener('click', function(){
+        event.preventDefault();
+        wrapIndex=1860*3+930;
+        currentmargin=wrapIndex;
+        for(let i =0; i<shopNav.length; i++){
+            shopNav[i].classList.remove('shopOn');
+        };
+        for(let i =0; i<shopCon.length; i++){
+            shopCon[i].classList.remove('shopConOn');
+        };
+        shopNav[3].classList.add('shopOn');
+        shopWarp.style.marginLeft= `-${wrapIndex}px`;
+        conIndex=22;
+        currentIndex=conIndex;
+        shopCon[conIndex].classList.add('shopConOn');
+    });
+    
+    
+    
+    
+    for (let i = 0; i < 3; i++) {
+        let clone = shopCon[i].cloneNode(true);
+        document.querySelector('.cloneApp').append(clone);
+    }
+    for (let i = shopCon.length-3; i<shopCon.length; i++) {
+        let clone = shopCon[i].cloneNode(true);
+        document.querySelector('.clonePre').append(clone);
+    }
+    shopCon = document.querySelectorAll('.shopshowwarp>.shopwarp>div>div');
+    
+    Srbtn.addEventListener('click', function(){
+        shopCon[currentIndex].classList.remove('shopConOn');
+        ++currentIndex;
+        shopCon[currentIndex].classList.add('shopConOn');
+        currentmargin+=310;
+        shopWarp.style.marginLeft= `-${currentmargin}px`;
+
+        if(currentIndex==21){
+            for(let i =0; i<shopNav.length; i++){
+                shopNav[i].classList.remove('shopOn');
+            };
+            shopNav[navIndex+1].classList.add('shopOn');
+        };
+        if(currentIndex==27){
+            for(let i =0; i<shopNav.length; i++){
+                shopNav[i].classList.remove('shopOn');
+            };
+            shopNav[navIndex-2].classList.add('shopOn');
+        };
+        if(currentIndex==9){
+            for(let i =0; i<shopNav.length; i++){
+                shopNav[i].classList.remove('shopOn');
+            };
+            shopNav[navIndex-1].classList.add('shopOn');
+        };
+        if(currentIndex==15){
+            for(let i =0; i<shopNav.length; i++){
+                shopNav[i].classList.remove('shopOn');
+            };
+            shopNav[navIndex].classList.add('shopOn');
+        };
+
+        if(currentIndex==28){
+            setTimeout(()=>{
+                shopCon[currentIndex].classList.remove('shopConOn');
+                currentIndex=4;
+                shopWarp.style.transition ='0s';
+                currentmargin=930;
+                shopWarp.style.marginLeft= `-${currentmargin}px`;
+                shopCon[currentIndex].classList.add('shopConOn');
+                setTimeout(() => {
+                    shopWarp.style.transition = "all 0.6s"; //복원
+                }, 100);
+            },600);
+        };
     });
 
     
+    Slbtn.addEventListener('click', function(){
+        shopCon[currentIndex].classList.remove('shopConOn');
+        --currentIndex;
+        shopCon[currentIndex].classList.add('shopConOn');
+        currentmargin-=310;
+        shopWarp.style.marginLeft= `-${currentmargin}px`;
 
+        if(currentIndex==20){
+            for(let i =0; i<shopNav.length; i++){
+                shopNav[i].classList.remove('shopOn');
+            };
+            shopNav[navIndex].classList.add('shopOn');
+        };
+        if(currentIndex==14){
+            for(let i =0; i<shopNav.length; i++){
+                shopNav[i].classList.remove('shopOn');
+            };
+            shopNav[navIndex-1].classList.add('shopOn');
+        };
+        if(currentIndex==8){
+            for(let i =0; i<shopNav.length; i++){
+                shopNav[i].classList.remove('shopOn');
+            };
+            shopNav[navIndex-2].classList.add('shopOn');
+        };
+        if(currentIndex==2){
+            for(let i =0; i<shopNav.length; i++){
+                shopNav[i].classList.remove('shopOn');
+            };
+            shopNav[navIndex+1].classList.add('shopOn');
+        };
 
-
-
-
-
-
+        if(currentIndex==1){
+            setTimeout(()=>{
+                shopCon[currentIndex].classList.remove('shopConOn');
+                currentIndex=25;
+                shopWarp.style.transition ='0s';
+                currentmargin=7440;
+                shopWarp.style.marginLeft= `-${currentmargin}px`;
+                shopCon[currentIndex].classList.add('shopConOn');
+                setTimeout(() => {
+                    shopWarp.style.transition = "all 0.6s"; //복원
+                }, 100);
+            },600);
+        };
+    });
 
 
     //events
