@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    /* colors */
+    --gray_100: #F4F4F4;
+    --gray_200: #9B9B9B;
+    --gray_300: #9398A9;
+    --gray_400: #636671;
+    --gray_500: #575663;
+    --gray_600: #4D4D4D;
+    --mint_100: #09F6F9;
+
+
+    /* font */
+    --kor_title:"EsaManru";
+    --kor: "Noto Sans KR";
+    --eng: "Orbitron";
+}
+body{
+    width: 1920px;
+    background-color: #101527;
+}
+
+/* header */
+main{
+    width: 100%;
+    height: 980px; 
+    color: var(--gray_300);
+    position: relative;
+}
+#header{
+    width: 1920px;
+    height: 80px;
+    margin: 20px 140px; 
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;left: 0;
+    z-index: 5;
+    transition: all 0.6ms;
+}
+#header::after{
+    content: '';
+    display: block;
+    width: 1920px;
+    position: absolute;
+    top: -20px;
+    left: -140px;
+    background-image: url(./imgs/Main/Main_V/menubg.png);
+    opacity: 0.9;
+    z-index: -1;
+    transition: all 500ms;
+    height: 0px;
+    overflow: hidden;
+}
+#header.bgon::after{
+    height: 372px;
+}
+#header>.logo{
+    width: 10%;
+}
+#header>nav{
+    width: 60%;
+    margin: 0px auto;
+}
+#header>nav>ul{
+    display: flex;
+    justify-content: center;
+}
+#header>nav>ul>li>a{
+    display: inline-block;
+    padding: 10px 48px;
+    color: var(--gray_300, #9398A9);
+    font-family: var(--kor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+}
+#header>nav>ul>li>a.hover{
+    border-bottom: 3px solid var(--gray_100);
+}
+#header>nav>ul>li>ul>li>a.hover{
+    color: var(--gray_100);
+}
+#header>nav>ul>li{
+    position: relative;
+}
+#header>nav>ul>li>ul{
+    width: 110%;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    transition: all 600ms;
+    height: 0px;
+    overflow: hidden;
+}
+#header>nav>ul>li>ul>li>a{
+    color: var(--gray_300, #9398A9);
+    font-family: var(--kor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+    display: inline-block;
+    padding: 12px 0px;
+}
+.icons{
+    width: 20%;
+    justify-content: right;
+}
+.icons>ul{
+    display: flex;
+    height: 40px;
+    width: 120px;
+}
+.icons>ul>li{
+    margin: 0px 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------- Footer */
+footer{
+    width: 1920px;height: 630px;
+    background-color: #090B15;
+    box-sizing: border-box;
+}
+footer>.up{
+    width: 1640px;
+    height: 172px;
+    border-bottom: 0.5px solid var(--gray_600);
+    display: flex;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+footer> .up > h3{
+    display: inline-block;
+    color: var(--gray_100, #F4F4F4);
+    font-family: var(--kor);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 124px;
+}
+footer>.up h3{
+    margin-right: 120px;
+}
+footer>.up h3:nth-child(4){
+    margin-right: 84px;
+}
+.up>.logo{
+    margin-right: 840px;
+    padding-bottom: 33px;
+    padding-top: 90px;
+    padding-left: 62px;
+}
+.up>.topbtn{
+    margin-top: 100px;
+}
+footer>.down{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+footer>.down.footerwrap{
+    width: 1640px;
+    height: 346px;
+}
+footer>.down>.footerwrap>.contactus>h3{
+    color: var(--gray_100, #F4F4F4);
+    font-family: var(--kor);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 58px;
+    padding-left: 62px;
+    margin-bottom: 30px;
+}
+footer>.down>.footerwrap>.contactus>li{
+    color: var(--gray_200, #9B9B9B);
+    font-family: var(--kor);
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-left: 62px;
+}
+.footerwrap{
+    display: flex;
+}
+.footerwrap>.information>.menuwrap{
+    display: flex;
+}
+.information>h3{
+    color: var(--gray_100, #F4F4F4);
+    font-family: var(--kor);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 58px;
+    padding-left: 77px;
+    margin-bottom: 30px;
+}
+.menuwrap>ul:first-child{
+    padding-left: 77px;
+    padding-right: 48px;
+}
+.menuwrap>ul:last-child{
+    padding-left: 40px;
+}
+.menuwrap>ul>li>a{
+    display: inline-block;
+    color: var(--gray_200, #9B9B9B);
+    font-family: var(--kor);
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 28px;
+}
+.footerwrap>ul{
+    margin-top: 37px;
+}
+.footerwrap>.com_infor{
+    margin-left: 257px;
+    padding-right: 109px;
+}
+.footerwrap>.sustain_bus{
+    padding-left: 104px;
+}
+.footerwrap>ul>li>a{
+    display: inline-block;
+    padding-bottom: 30px;
+    color: var(--gray_200, #9B9B9B);
+    font-family: var(--kor);
+    font-size: 14px;
+    font-weight: 300;
+}
+.footerwrap>ul>li:last-of-type>a{
+    padding-bottom: 0;
+}
+footer>.down>.icons{
+    width: 1640px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    margin-left: 46px;
+}
+footer>.down>.icons>span{
+    align-items:end;
+}
+.icons>a>i{
+    color: var(--gray_100, #F4F4F4);
+    font-family: "Font Awesome 5 Brands";
+    font-size: 22px;
+    font-weight: 400;
+    padding-right: 38px;
+}
+.icons>.familysite{
+    width: 284px; height: 44px;
+    border: 0.5px solid var(--gray_400);
+    color: var(--gray_100);
+    font-family: var(--kor);
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background-color: #090B15;
+    position: relative;
+    margin-right: 700px;
+}
+.icons>.familysite>img{
+    float: right;
+    margin-top: 2px;
+}
+.icons>.familysite>.drop{
+    position: absolute;
+    background-color: #090B15;
+    border: 0.5px solid var(--gray_400);
+    border-bottom: 0;
+    top: -452px;
+    left: -1px;
+    padding: 15px;
+    width: 284px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all 0.3;
+}
+.icons>.familysite>.drop.active {
+    opacity: 1;
+}
+.drop>li>a{
+    display: inline-block;
+    color: var(--gray_200, #9B9B9B);
+    font-family: var(--kor);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.5;
+}
+
+.icons>span{
+    float: right;
+    color: var(--gray_400, #636671);
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: auto;
+}
