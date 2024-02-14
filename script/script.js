@@ -52,29 +52,31 @@ window.onload = function(){
     slider.append(clone); 
     let index =0;
 
+
+    
     setInterval(() => {
-
-        for(let i =0; i<cursors.length; i++){
-            cursors[i].classList.remove('on');   
-        }
-
-        index++;
-
-        slider.style.marginLeft = -index * 1920 + 'px';
-        slider.style.transition = "all 1s"
-        cursors[index % cursors.length].classList.add('on'); 
-        // 배열 길이를 초과하는 인덱스를 처리 
         
+        for(let i =0; i<cursors.length; i++){
+                cursors[i].classList.remove('on');   
+        };
+    
+        index++;
+        slider.style.transition = '1s';
+        slider.style.marginLeft = -index * 1920 + 'px';
+        // slider.style.transition = "all 1s"
+        cursors[index % cursors.length].classList.add('on'); 
+
         if(index == cursors.length){
             setTimeout(() => {
                 slider.style.marginLeft = '0';
                 slider.style.transition = '0s';
                 index = 0;
             },1000);
-        }
-
+        };
     
-    }, 6000);
+        
+    
+    }, 4500);
 
 
 

@@ -28,9 +28,9 @@ body{
 }
 
 /* header */
-main{
+header{
     width: 100%;
-    height: 980px; 
+    height: 80px; 
     color: var(--gray_300);
     position: relative;
 }
@@ -52,7 +52,7 @@ main{
     position: absolute;
     top: -20px;
     left: -140px;
-    background-image: url(./imgs/Main/Main_V/menubg.png);
+    background-image: url(/imgs/Main/Main_V/menubg.png);
     opacity: 0.9;
     z-index: -1;
     transition: all 500ms;
@@ -128,7 +128,17 @@ main{
 
 /* Sub-V */
 .subVisual{
+    width: 1920px; height: 600px;
     background-image: url(/imgs/Service/Service_visual.jpg);
+    position: relative;
+}
+.subVisual>span{
+    position: absolute;
+    top: 50%; left: 50%;
+    color: var(--gray_100);
+    font-family: var(--kor_title);
+    font-weight: 400;
+    font-size: 70px;
 }
 
 

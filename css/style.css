@@ -126,13 +126,15 @@ main{
 
 /* slide */
 main{
-    width: 1920px;
+    width: 1919px;
     overflow: hidden;
 }
 main>.slidewarp{
     display: flex;
 }
-
+main>.slidewarp>div{
+    background-size: cover;
+}
 .slidewarp>.slide5{
     position: relative;
 }
