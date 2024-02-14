@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyundai Service page</title>
 
-    <script src="./script/SubScript.js"></script>
+    <script src="./script/brandScript.js"></script>
     <link rel="stylesheet" href="./css/serviceStyle.css">
     <!-- ko font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
     <header>
         <!-- header -->
         <div id="header">
-            <div class="logo"><img src="/imgs/Main/Main_V/logo.png" alt="로고이미지"><a href="#"></a></div>
+            <div class="logo"><a href="./index.html"><img src="/imgs/Main/Main_V/logo.png" alt="로고이미지"></a></div>
             <nav>
                 <ul>
                     <li><a href="./List.html">차량</a>
@@ -73,20 +73,182 @@
     <div class="subVisual">
         <span>현대자동차 서비스 프로그램 안내</span>
     </div>
-    <ul class="submenu">
-        <li><a href="#">서비스 네트워크</a></li>
-        <li><a href="#">블루 멤버스</a></li>
-        <li><a href="#">서비스 맵</a></li>
+    <ul class="submenu2">
+        <li><a href="#serviceNetwork" class="on">서비스 네트워크</a></li>
+        <li><a href="#blueMembers">블루 멤버스</a></li>
+        <li><a href="#serviceMap">서비스 맵</a></li>
     </ul>
 
-    <div class="serviceNetwork"></div>
-    <div class="blueMembers"></div>
-    <div class="banner">
-        <p>현대닷컴 회원가입 후</p>
-        <p>더 많은 <span>블루멤버스 혜택</span>을 받아보세요</p>
-        <a href="#"><img src="" alt="화살표">현대 SHOP 입장하기</a>
+    <div id="serviceNetwork">
+        <h1>서비스 네트워크</h1>
+        <h2>블루핸즈 또는 하이테크센터 중 원하시는 장소와 시간에 차량관리를 받으실 수 있습니다.</h2>
+        <div>
+            <a href="#">
+                <div class="textwrap">
+                    <div class="maintext">
+                        <h2><span></span>하이테크센터</h2>
+                        <h3>현대자동차에서 직접 운영하는 서비스센터입니다.</h3>
+                    </div>
+                    <div class="subtext">
+                        <h5>직영 정비점</h5>
+                        <div class="subtextwrap">
+                            <p>높은 기술력과 장비, 소음, 하체, 엔진 등 부분적 수리 가능, 높은 작업 완성도</p>
+                            <p class="small">예약 대기 시간이 있을 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="SN1"></div>
+            </a>
+        </div>
+        <div><a href="#">
+            <div class="textwrap">
+                <div class="maintext">
+                    <h2><span></span>블루핸즈</h2>
+                    <h3>전국 어디에서나 이용할 수 있는 현대자동차의 공식 협력사입니다.</h3>
+                </div>
+                <div class="subtext">
+                    <h5>전문 협력사</h5>
+                    <div class="subtextwrap">
+                        <p>보증수리 및 일반 정비 가능</p>
+                        <p class="small">예약 대기 시간이 있을 수 있습니다.</p>
+                    </div>
+                    <h5 class="last">종합 협력사</h5>
+                    <div class="subtextwrap">
+                        <p>모든 보증수리 및 일반 정비 가능</p>
+                        <p class="small">하이테크센터보다 비교적 저렴하게 이용 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="SN2"></div>
+        </a></div>
+        <div class="btnwrap">
+            <div>
+                <div id="btn1"></div>
+                <div class="btn_textwrap">
+                    <p>서비스 전화 예약</p>
+                    <span>전화로 쉽고 간단하게 정비예약</span>
+                </div>
+            </div>
+            <div>
+                <div id="btn2"></div>
+                <div class="btn_textwrap">
+                    <p>서비스 네트워크 검색/예약</p>
+                    <span>가까운 하이테크센터/블루핸즈에서 정비 예약</span>
+                </div>
+            </div>
+            <div>
+                <div id="btn3"></div>
+                <div class="btn_textwrap">
+                    <p>전담 블루핸즈 설정</p>
+                    <span>원하는 전담 블루핸즈를 설정</span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="serviceMap"></div>
+    <div id="blueMembers">
+        <h1>블루멤버스</h1>
+        <h2>블루멤버스는 2007년부터 시작된 현대자동차 오너를 위한 고객 서비스 입니다.</h2>
+        <div class="iconwrap">
+            <div>
+                <span>혜택 1</span>
+                <div id="icon1"></div>
+                <h5>차량관리 서비스</h5>
+                <p>서비스 거점 기본점검<br>
+                    홈투홈 서비스</p>
+            </div>
+            <div>
+                <span>혜택 2</span>
+                <div id="icon2"></div>
+                <h5>생활 제휴 서비스</h5>
+                <p>블루멤버스 포인트 적립 및<br>
+                    사용 가능한 제휴 서비스</p>
+            </div>
+            <div>
+                <span>혜택 3</span>
+                <div id="icon3"></div>
+                <h5>블루멤버스 포인트</h5>
+                <p>신차 구매 혜택<br>
+                    적립 & 사용</p>
+            </div>
+        </div>
+        <div class="blueMemberBtn"><a href="#">블루멤버스 가입하기</a></div>
+    </div>
+    <div id="banner">
+        <div class="bannerTextwrap">
+            <p id="light">현대닷컴 회원가입 후</p>
+            <p id="bold">더 많은 <span>블루멤버스 혜택</span>을 받아보세요</p>
+            <a href="#">현대 SHOP 입장하기<span></span></a>
+        </div>
+        <div id="bannerImg"></div>
+    </div>
+    <div id="serviceMap">
+        <h1>케어 서비스 맵</h1>
+        <h2>현대자동차에서 제공하는 차량 관련 서비스 프로그램을 한 눈에 볼 수 있습니다.</h2>
+        <div class="tabmenu">
+            <ul>
+                <li><a href="#" class="active">카라이프 서비스</a></li>
+                <li><a href="#">보증제도 및 점검</a></li>
+                <li><a href="#">긴급상황 및 정비</a></li>
+            </ul>
+        </div>
+        <div class="conwraps">
+            <div class="tabcon1">
+                <div class="conwrap">
+                    <div class="textwrap">
+                        <h2>카라이프 서비스</h2>
+                        <ul class="space">
+                            <li><a href="#"><span>방문세차</span>원하는 날짜/장소에서 전문 테크니션을 통한 프리미엄 세차 서비스<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>손세차</span>전문 손 세차장을 예약하고, 편리하게 이용하실 수 있는 서비스<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>대리</span>간단한 터치로 즉시 호출 및 예약이 가능한 대리 서비스<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>딜리버리</span>고객님이 동승하지 않고 원하는 장소까지 차량을 이동시키는 서비스<div class="icon_arrow"></div></a></li>
+                        </ul>
+                        <h2>전기차 특화 서비스</h2>
+                        <ul>
+                            <li><a href="#"><span>픽업 앤 충전</span>픽업-충전-딜리버리 + 기계식 세차(옵션)를 제공하는 전기차 충전 서비스<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>럭키패스 H</span>약정 충전량 내에서 충전요금 할인 혜택을 제공하는 월 구독 상품<div class="icon_arrow"></div></a></li>
+                        </ul>
+                    </div>
+                    <div id="con1"></div>
+                </div>
+            </div>
+            <div class="tabcon2">
+                <div class="conwrap">
+                    <div class="textwrap">
+                        <h2>보증제도 및 서비스</h2>
+                        <ul class="space">
+                            <li><a href="#"><span>보증수리제도</span>차종별, 부품별 보증기간에 따라 고객님의 차량을 책임지는 서비스<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>선택형 보증제도</span>라이프스타일에 따라 차체 및 일반부품 보증기간을 선택하여 변경하는 서비스<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>바디케어 서비스</span>출고일 1년이내 또는 주행 2만km동안 사고로 인해 발생하는 외장손상 보장서비스<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>워런티 플러스</span>무상 보증기간 만료 후, 추가계약기간 / 주행거리 동안 보증기간을 연장하는 서비스<div class="icon_arrow"></div></a></li>
+                        </ul>
+                        <h2>사전예방 및 점검</h2>
+                        <ul>
+                            <li><a href="#"><span>블루기본점검</span>고객님의 차량이 최상의 상태를 유지할 수 있도록 무상점검을 제공<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>찾아가는 서비스</span>당사차량 20대 이상 보유 · 집결시 찾아가는 차량점검 서비스<div class="icon_arrow"></div></a></li>
+                        </ul>
+                    </div>
+                    <div id="con2"></div>
+                </div>
+            </div>
+            <div class="tabcon3">
+                <div class="conwrap">
+                    <div class="textwrap">
+                        <h2>긴급상황 및 정비</h2>
+                        <ul class="space">
+                            <li><a href="#"><span>긴급출동 서비스</span>노상에서 차량고장으로 주행이 어려운 상황에 처할 경우, 즉시 출동<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>찾아가는 충전 서비스</span>고객님이 원하는 곳으로 출동하여 전기를 무상으로 긴급 충전 서비스<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>수소차 긴급 딜리버리</span>수소차 운행 중 차량 문제(방전 및 연료 소진 등) 발생 시 긴급 견인 서비스<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>홈투홈 서비스</span>직접 정비업체를 방문하기 어려운 고객을 방문하여 차량을 인수 후 , 인계<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>과잉정비 예방 프로그램</span>블루핸즈 과잉정비 발생 시 최대 10배까지 보상 제도<div class="icon_arrow"></div></a></li>
+                            <li><a href="#"><span>고객 차량 지원 서비스</span>보증수리 입고 고객의 편의를 위해 수리 기간 동안 차량을 제공 서비스<div class="icon_arrow"></div></a></li>
+                        </ul>
+                    </div>
+                    <div id="con3"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
     <footer>
