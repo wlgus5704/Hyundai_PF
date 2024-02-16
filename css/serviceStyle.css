@@ -140,10 +140,10 @@ header{
 }
 .subVisual>span{
     position: absolute;
-    top: 45%; left: 24%;
+    top: 45%; left: 28%;
     color: var(--gray_100);
-    font-family: var(--kor_title);
-    font-weight: 300;
+    font-family: var(--eng);
+    font-weight: 500;
     font-size: 70px;
 }
 .submenu2.fixed{
@@ -159,14 +159,15 @@ header{
 .submenu2>li>a{
     display: inline-block;
     font-family: var(--kor);
-    font-weight: 500;
-    color: var(--gray_400);
+    font-weight: 400;
+    color: var(--gray_300);
     padding: 20px 0px;
     font-size: 20px;
 }
 .submenu2>li>a.on{
     border-bottom: 2px solid var(--gray_100);
     color: var(--gray_100);
+    font-weight: 500;
 }
 #serviceNetwork>h1{
     margin-top: 124px;

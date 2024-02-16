@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyundai Brand page</title>
+    <script src="./script/brandScript.js"></script>
+    <link rel="stylesheet" href="./css/brandStyle.css">
+    <!-- ko font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- ko title font -->
+    <link href="https://webfontworld.github.io/gonggames/EsaManru.css" rel="stylesheet">
+    <!-- en font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/488f713ae9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
+    <header>
         <!-- header -->
         <div id="header">
-            <div class="logo"><img src="./imgs/Main/Main_V/logo.png" alt="로고이미지"><a href="#"></a></div>
+            <div class="logo"><a href="./index.html"><img src="/imgs/Main/Main_V/logo.png" alt="로고이미지"></a></div>
             <nav>
                 <ul>
                     <li><a href="./List.html">차량</a>
@@ -46,24 +60,172 @@
             </nav>
             <div class="icons">
                 <ul>
-                    <li class="mypage"><a href="#"><img src="./imgs/Main/Main_V/mypage_icon.png" alt="마이페이지 아이콘"></a></li>
-                    <li class="search"><a href="#"><img src="./imgs/Main/Main_V/search_icon.png" alt="검색 아이콘"></a></li>
-                    <li class="menu"><a href="#"><img src="./imgs/Main/Main_V/hamburger_icon.png" alt="메뉴 아이콘"></a></li>
+                    <li class="mypage"><a href="#"><img src="/imgs/Main/Main_V/mypage_icon.png" alt="마이페이지 아이콘"></a></li>
+                    <li class="search"><a href="#"><img src="/imgs/Main/Main_V/search_icon.png" alt="검색 아이콘"></a></li>
+                    <li class="menu"><a href="#"><img src="/imgs/Main/Main_V/hamburger_icon.png" alt="메뉴 아이콘"></a></li>
                 </ul>
             </div>
         </div>
-
-        
-    </main>
-    <div class="subvisual">
-        <span>현대자동차 서비스 프로그램 안내</span>
+    </header>
+    <div class="subVisual">
+        <span>BRAND STORY</span>
     </div>
-    <ul class="submenu">
-        <li><a href="#">서비스 네트워크</a></li>
-        <li><a href="#">블루 멤버스</a></li>
-        <li><a href="#">서비스 맵</a></li>
+    <ul class="submenu2">
+        <li><a href="#philosophy" class="on">브랜드 철학</a></li>
+        <li><a href="#hydro">수소 비전</a></li>
+        <li><a href="#campain">브랜드 캠페인</a></li>
+        <li><a href="#news">브랜드 소식</a></li>
     </ul>
-
+    <div id="philosophy">
+        <h1>브랜드 철학</h1>
+        <h2>미래 모빌리티에 대한 우리의 생각은 사회에 대한 헌신에 기반합니다.</h2>
+        <div class="phconwrap">
+            <div class="vwrap1">
+                <div class="philo1">
+                    <div id="phimg1"></div>
+                    <h3>우리는 인류를 위해 옳은 일을 하고자 존재합니다.</h3>
+                    <p>우리의 목표는 모두에게 주어진 하루 24시간을 가치 있는 시간으로 새롭게 바꾸고,<br>
+                        모든 순간을 보다 의미 있게 만드는 것입니다. 단지 이동을 위한 것이 아닌,<br>
+                        모두의 삶을 가치 있는 순간으로 이어주는 것으로 만드는 것입니다.</p>
+                </div>
+                <div class="philo3">
+                    <div id="phimg3"></div>
+                    <h3>미래에 대한 우리의 비전</h3>
+                    <p>자동차 제조를 넘어서서 모든 사람들에게 이동의 자유를 제공하고자 합니다. 또한<br>
+                        현대자동차는 경제적인 에너지 자원으로써 수소의 가능성을 높여 청정 에너지로 전환<br>
+                        되는 사회의 변화에서 중추적인 역할을 할 것 입니다.</p>
+                </div>
+            </div>
+            <div class="vwrap2">
+                <div class="philo2">
+                    <div id="phimg2"></div>
+                    <h3>모두의 삶을 가장 가치 있는 순간으로</h3>
+                    <p>휴머니티의 실현은 사람들의 일상을 이해하는 것에서 시작됩니다. 현대인들은<br>
+                        한정된 일상의 시간을 의미 있게 보내는 것을 원하며, 이러한 시간의 소중함을<br>
+                        알고있습니다.  모든 인류의 더 나아진 삶을 위해 진보를 시작합니다.</p>
+                </div>
+                <p id="phtext">Brand<br>philosophy</p>
+                
+            </div>
+        </div>
+    </div>
+    <div id="hydro">
+        <h1>현대자동차의 수소 비전</h1>
+        <h2>수소를 동력원으로 활용하는 미래를 실현하기 위해 수소 기술에 적극 투자하고 있습니다.</h2>
+        <div class="hydrowrap">
+            <div class="active" id="hydro1">
+                <span>01</span>
+                <h4>H2U: 수소 사회의 시작</h4>
+                <p>현대자동차의 H2U 캠페인에서 페기 구를 비롯한<br>
+                    다양한 라이프스타일과 테크 분야의인플루언서들을 만나보세요.</p>
+            </div>
+            <div class="def" id="hydro2">
+                <span>02</span>
+                <h4>현대자동차 x 블룸버그 - 2020년 수소 경제</h4>
+                <p>지구상에서 가장 풍부한 원소인 수소는 연료전지로 사용할 때 효과적이고 전기와 열, 물만 방출하는 강력한 청정에너지입니다.<br>
+                    이 연구에서는 현재의 수소 경제 상황을 살펴보고 수소에너지의 미래 잠재력을 탐구합니다.
+                </p>
+            </div>
+            <div class="def" id="hydro3">
+                <span>03</span>
+                <h4>H2U x 돈 달만</h4>
+                <p>미래 모빌리티 전문 저널리스트인 돈 달만(Don Dahlmann)과 H2U팀이<br>
+                    함께 수소연료전지 기술이 어떻게 우리의 미래를 앞당길지 자세히 알아봅니다.</p>
+            </div>
+            <div class="def" id="hydro4">
+                <span>04</span>
+                <h4>H2U x 제이콥 보템프스</h4>
+                <p>과학 전문 유튜버이자 연구원인 제이콥 보템프스(Jacob Beautemps)가<br>
+                    현대자동차의 H2U (Hydrogen to you) 캠페인을 위해 수소 솔루션에 대하여 설명합니다.</p>
+            </div>
+        </div>
+        <div class="hydrobtn"><a href="#">See More</a></div>
+    </div>
+    <div id="campain">
+        <h1>브랜드 캠페인</h1>
+        <h2>지속가능한 미래로의 연결을 추구하는 브랜드 캠페인을 만나보세요</h2>
+        <ul>
+            <li><a href="#"><span>01</span><div id="cam1"></div><span class="kor">지속가능한 비전</span><span class="eng">Sustainable vision</span><div class="arrow">See More</div></a></li>
+            <li><a href="#"><span>02</span><div id="cam2"></div><span class="kor">라이프스타일</span><span class="eng">Life style</span><div class="arrow">See More</div></a></li>
+            <li><a href="#"><span>03</span><div id="cam3"></div><span class="kor">헤리티지 스토리</span><span class="eng">Heritage </span><div class="arrow">See More</div></a></li>
+            <li><a href="#"><span>04</span><div id="cam4"></div><span class="kor">모빌리티 솔루션</span><span class="eng">Mobility solution</span><div class="arrow">See More</div></a></li>
+            <li><a href="#"><span>05</span><div id="cam5"></div><span class="kor">아이오닉</span><span class="eng">IONIQ</span><div class="arrow">See More</div></a></li>
+        </ul>
+    </div>
+    <div id="news">
+        <h1>현대자동차 소식</h1>
+        <ul class="newsul">
+            <li><a href="#" class="on">#All</a></li>
+            <li><a href="#" >#현대자동차</a></li>
+            <li><a href="#" >#Hyundai_N</a></li>
+            <li><a href="#" >#CASPER</a></li>
+            <li><a href="#" >#TheFutureOfMobility</a></li>
+            <li><a href="#" >#about_hyundai</a></li>
+            <li><a href="#" >#친환경</a></li>
+            <li><a href="#" >#BTS</a></li>
+            <li><a href="#" >#IONIQ</a></li>
+        </ul>
+        <div class="newswrap">
+            <div class="lbtn"><a href="#"></a></div>
+            <div class="con">
+                <div class="conwrap">
+                    <div class="con1">
+                        <div id="con1_video1">
+                            <p>SANTA FE｜일상과 일상 사이를 열다 – Foggy 편</p>
+                        </div>
+                        <div id="con1_video2">
+                            <p>디 올 뉴 싼타페 | 월드 프리미어 Primary film</p>
+                        </div>
+                        <div id="con1_video3">
+                            <p>IONIQ｜IONIQ Life – 쿨한 기다림 편</p>
+                        </div>
+                        <div id="con1_video4">
+                            <p>LONGEST RUN｜캠페인 필름 – 풀버전</p>
+                        </div>
+                        <div id="con1_video5">
+                            <p>현대자동차 디지털 아트 콘테스트｜Drawing Longest Run</p>
+                        </div>
+                        <div id="con1_video6">
+                            <p>AVANTE｜퍼포먼스 필름 – 더 뉴 아반떼 N</p>
+                        </div>
+                        <div id="con1_video7">
+                            <p>어느 작은 영웅의 이야기 (The Little Big Hero)</p>
+                        </div>
+                        <div id="con1_video8">
+                            <p>CASPER | 시즌 오브 캐스퍼</p>
+                        </div>
+                    </div>
+                    <div class="con2">
+                        <div id="con2_video1">
+                            <p>[IONIQ x BTS] IONIQ: I’m On it</p>
+                        </div>
+                        <div id="con2_video2">
+                            <p>[Hydrogen Documentary with Hyundai x BTS]</p>
+                        </div>
+                        <div id="con2_video3">
+                            <p>팰리세이드 with BTS - 슈퍼문 편</p>
+                        </div>
+                        <div id="con2_video4">
+                            <p>팰리세이드 with 방탄소년단 - 레드카펫편</p>
+                        </div>
+                        <div id="con2_video5">
+                            <p>현대자동차 x BTS | Positive Energy 넥쏘 2편</p>
+                        </div>
+                        <div id="con2_video6">
+                            <p>[현대자동차 X BTS] BTS의 QUALITY TIME!</p>
+                        </div>
+                        <div id="con2_video7">
+                            <p>Because of You with 방탄소년단 뷔</p>
+                        </div>
+                        <div id="con2_video8">
+                            <p>Because of You with 방탄소년단 진</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rbtn"><a href="#"></a></div>
+        </div>
+    </div>
 
 
 
@@ -159,5 +321,4 @@
 
 
 
-</body>
 </html>
