@@ -154,6 +154,7 @@ footer> .up > h3{
     font-size: 15px;
     font-weight: 600;
     margin-top: 124px;
+    margin-left: 0;
 }
 footer>.up h3{
     margin-right: 120px;
@@ -227,15 +228,22 @@ footer>.down>.footerwrap>.contactus>li{
     font-weight: 300;
     padding-bottom: 28px;
 }
+.footerwrap{
+    margin: 0;
+}
+.footerwrap>.contactus, .information, .sustain_bus, .ir_infor{
+    margin: 0;
+}
 .footerwrap>ul{
     margin-top: 37px;
 }
 .footerwrap>.com_infor{
-    margin-left: 257px;
+    margin-left: 290px;
+    margin-right: 0;
     padding-right: 109px;
 }
-.footerwrap>.sustain_bus{
-    padding-left: 104px;
+.footerwrap>.ir_infor{
+    padding-right: 104px;
 }
 .footerwrap>ul>li>a{
     display: inline-block;

@@ -33,6 +33,10 @@ body{
     width: 1920px;
     background-color: #101527;
 }
+h1,h2,h3,h4,h5,p{
+    line-height: 1.5;
+}
+
 /* header */
 header{
     width: 100%;
@@ -171,7 +175,7 @@ header{
 }
 #serviceNetwork>h1{
     margin-top: 124px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     color: var(--gray_100);
     font-weight: 300;
     font-size: 42px;
@@ -200,7 +204,7 @@ header{
     font-size: 35px;
     font-family: var(--kor);
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 #serviceNetwork>div>a>.textwrap>.maintext>h2>span{
     display: inline-block;
@@ -214,7 +218,7 @@ header{
     font-size: 20px;
     font-family: var(--kor);
     font-weight: 400;
-
+    margin-left: 8px;
 }
 #serviceNetwork>div>a>.textwrap>.subtext{
     display: flex;
@@ -232,6 +236,7 @@ header{
     font-size: 18px;
     font-weight: 400;
     color: var(--bluegray_100);
+    margin-bottom: 6px;
 }
 #serviceNetwork>div>a>.textwrap>.subtext>.subtextwrap>.small{
     font-family: var(--kor);
@@ -290,7 +295,7 @@ header{
     font-size: 22px;
     font-weight: 500;
     font-family: var(--kor);
-    margin-bottom: 6px;
+    margin-bottom: 2px;
 }
 .btnwrap>div>.btn_textwrap>span{
     font-weight: 400;
@@ -304,7 +309,7 @@ header{
 }
 #blueMembers>h1{
     margin-top: 124px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     color: var(--gray_100);
     font-weight: 300;
     font-size: 42px;
@@ -343,6 +348,7 @@ footer> .up > h3{
     font-size: 15px;
     font-weight: 600;
     margin-top: 124px;
+    margin-left: 0;
 }
 footer>.up h3{
     margin-right: 120px;
@@ -416,15 +422,22 @@ footer>.down>.footerwrap>.contactus>li{
     font-weight: 300;
     padding-bottom: 28px;
 }
+.footerwrap{
+    margin: 0;
+}
+.footerwrap>.contactus, .information, .sustain_bus, .ir_infor{
+    margin: 0;
+}
 .footerwrap>ul{
     margin-top: 37px;
 }
 .footerwrap>.com_infor{
-    margin-left: 257px;
+    margin-left: 290px;
+    margin-right: 0;
     padding-right: 109px;
 }
-.footerwrap>.sustain_bus{
-    padding-left: 104px;
+.footerwrap>.ir_infor{
+    padding-right: 104px;
 }
 .footerwrap>ul>li>a{
     display: inline-block;
@@ -503,6 +516,12 @@ footer>.down>.icons>span{
     font-weight: 300;
     margin-top: auto;
 }
+
+/* footer FIN */
+
+
+
+
 .iconwrap{
     display: flex;
     width: 1640px;
@@ -623,7 +642,7 @@ footer>.down>.icons>span{
 }
 #serviceMap>h1{
     margin-top: 124px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     color: var(--gray_100);
     font-weight: 300;
     font-size: 42px;

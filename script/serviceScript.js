@@ -78,7 +78,7 @@ window.onload = function(){
             submenu.classList.remove('fixed'); 
         }
 
-        if (scrollPosition > 3590) { 
+        if (scrollPosition > 3500) { 
             for(let i =0; i<submenus.length; i++){
                 submenus[i].classList.remove('on')
             };

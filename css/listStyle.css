@@ -132,6 +132,44 @@ header{
 }
 
 
+/* submenu2 */
+.subVisual{
+    background-image: url(/imgs/List/sub_v.jpg);
+    position: relative;
+    width: 1920px; height: 600px;
+}
+.subVisual>span{
+    position: absolute;
+    color: var(--gray_100);
+    font-size: 70px;
+    font-family: var(--eng);
+    font-weight: 500;
+    top: 43%; left: 31%;
+}
+.submenu2.fixed{
+    position: fixed;
+    top: 0;
+    width: 1640px;
+}
+.submenu2{
+    padding: 0 140px;
+    display: flex;
+    background: #060A1D;
+}
+.submenu2>li>a{
+    display: inline-block;
+    font-family: var(--kor);
+    font-weight: 400;
+    color: var(--gray_300);
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.submenu2>li>a.on{
+    border-bottom: 2px solid var(--gray_100);
+    color: var(--gray_100);
+    font-weight: 500;
+}
+
 /* Footer */
 footer{
     width: 1920px;height: 630px;
@@ -153,6 +191,7 @@ footer> .up > h3{
     font-size: 15px;
     font-weight: 600;
     margin-top: 124px;
+    margin-left: 0;
 }
 footer>.up h3{
     margin-right: 120px;
@@ -226,15 +265,22 @@ footer>.down>.footerwrap>.contactus>li{
     font-weight: 300;
     padding-bottom: 28px;
 }
+.footerwrap{
+    margin: 0;
+}
+.footerwrap>.contactus, .information, .sustain_bus, .ir_infor{
+    margin: 0;
+}
 .footerwrap>ul{
     margin-top: 37px;
 }
 .footerwrap>.com_infor{
-    margin-left: 257px;
+    margin-left: 290px;
+    margin-right: 0;
     padding-right: 109px;
 }
-.footerwrap>.sustain_bus{
-    padding-left: 104px;
+.footerwrap>.ir_infor{
+    padding-right: 104px;
 }
 .footerwrap>ul>li>a{
     display: inline-block;
@@ -312,4 +358,294 @@ footer>.down>.icons>span{
     font-size: 14px;
     font-weight: 300;
     margin-top: auto;
+}
+
+/* footer FIN */
+
+
+/* list css */
+h1,h2,h3,h4,h5,p{
+    line-height: 1.5;
+}
+.bodywrap{
+    width: 1920px;
+    display: flex;
+    position: relative;
+}
+
+/* filter */
+.bodywrap>.filter{
+    width: 414px;
+    margin: 0;
+    margin-top: 100px;
+    margin-left: 140px;
+}
+.filter>div>h5{
+    font-family: var(--kor);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--gray_100);
+    margin-bottom: 36px;
+}
+.filter>div>h5>span{
+    margin-left: 16px;
+    color: var(--gray_200);
+    font-size: 14px;
+    font-family: var(--kor);
+    font-weight: 300;
+}
+.filter>div>form{
+    margin-bottom: 52px;
+}
+.filter>div>form>.inputwrap{
+    margin-bottom: 14px;
+}
+input[type="checkbox"], input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.filter>div>form>.inputwrap>label{
+    color: var(--gray_200);
+    font-family: var(--kor);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 18px;
+    position: relative;
+}
+.inputwrap input:checked + label {
+    font-weight: 500 !important;
+    color: var(--gray_100) !important;
+}
+.inputwrap>input:checked + label::after{
+    position: absolute;
+    top: 9px; left: -36px;
+    content: '';
+    width: 12px; height: 12px;
+    border-radius: 12px;
+    background-color: var(--mint_100);
+}
+input{
+    margin-right: 18px;
+    width: 24px; height: 24px;
+    margin: 0;
+}
+.checkbox, .radio{
+    border: 1px solid var(--gray_400);
+    border-radius: 20px;
+}
+.checkbox:checked, .radio:checked{
+    border: 1px solid var(--mint_100);
+}
+.color{
+    border: 1px solid var(--gray_400);
+    margin-right: 18px;
+    border-radius: 20px;
+}
+.color:checked{
+    border: 2.5px solid var(--mint_100);
+}
+#color1{ background: linear-gradient(to bottom left, 
+    #FF0000, #FFC700, #5FA069,#0029FF);}
+#color2{background-color: #CFD0D4;}
+#color3{background-color: #86878B;}
+#color4{background-color: #000;}
+#color5{background-color: #AB0408;}
+#color6{background-color: #072387;}
+#color7{background-color: #95842A;}
+.inputwrap{
+    display: flex;
+    align-items: center;
+}
+.carswrap{
+    width: 1285px;
+    margin-top: 100px;
+}
+.quickmenu{
+    width: 140px;
+    margin-top: 70px;
+    align-items: center;
+}
+.quickmenu>.menuwrap{
+    width: 90px;
+    height: 488px;
+    background-color: #060A1D;
+    border: 1px solid var(--gray_500);
+    border-radius: 45px;
+    text-align: center;
+    padding-top: 12px;
+}
+.quickmenu>.menuwrap>a{
+    width: 90px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: var(--kor);
+    color: var(--gray_300);
+    margin-bottom: 24px;
+}
+.quickmenu>.menuwrap>a:hover{
+    color: var(--mint_100);
+}
+#qicon1{
+    width: 58px; height: 58px;
+    background-image: url(/imgs/List/icon-car.svg);
+}
+.quickmenu>.menuwrap>a:hover>#qicon1{
+    background-image: url(/imgs/List/icon-car-hover.svg);
+}
+#qicon2{
+    width: 58px; height: 58px;
+    background-image: url(/imgs/List/icon-money.svg);
+}
+.quickmenu>.menuwrap>a:hover>#qicon2{
+    background-image: url(/imgs/List/icon-money-hover.svg);
+}
+#qicon3{
+    width: 58px; height: 58px;
+    background-image: url(/imgs/List/icon-handle.svg);
+}
+.quickmenu>.menuwrap>a:hover>#qicon3{
+    background-image: url(/imgs/List/icon-handle-hover.svg);
+}
+#qicon4{
+    width: 58px; height: 58px;
+    background-image: url(/imgs/List/icon-tag.svg);
+}
+.quickmenu>.menuwrap>a:hover>#qicon4{
+    background-image: url(/imgs/List/icon-tag-hover.svg);
+}
+#qmenu5{
+    display: inline-block;
+    width: 90px;height: 80px;
+    color: var(--navy_100);
+    font-size: 14px;
+    font-family: var(--eng);
+    background-color: #CED0D9;
+    border: 1px solid var(--gray_500);
+    border-radius: 0 0 45px 45px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 0;
+    margin-left: -1px;
+    font-weight: 400;
+}
+#qicon5{
+    width: 36px; height: 36px;
+    background-image: url(/imgs/List/icon-top.svg);
+}
+
+/* banner */
+.banner, .banner1, .banner2{
+    width: 1920px;
+    height: 330px;
+}
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.bannerwrap{
+    width: 3840px;
+    height: 330px;
+    display: flex;
+}
+.banner>.bannerwrap>.banner1{
+    background-image: url(/imgs/List/banner1.jpg);
+    position: relative;
+}
+.banner>.bannerwrap>.banner2{
+    background-image: url(/imgs/List/banner2.jpg);
+    position: relative;
+}
+.banner1>.title{
+    position: absolute;
+    left: 140px;top: 90px;
+    font-weight: 400;
+    font-size: 50px;
+    font-family:"STIX Two Text", serif;
+    color: var(--gray_100);
+    line-height: 1.5;
+}
+.banner1>.text{
+    position: absolute;
+    left: 140px;top: 156px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--kor);
+    line-height: 1.5;
+    color: #C3C3C3;
+}
+.banner1>.btn{
+    position: absolute;
+    left: 632px;top: 230px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: var(--kor);
+    color: var(--gray_100);
+    font-weight: 400;
+    width: 88px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+}
+.banner1>.btn>span{
+    background-position: 0 center;
+    display: inline-block;
+    background: url(/imgs/List/Icon-doublearrow.png);
+    width: 30px; height: 30px;
+    margin-left: 2px;
+}
+.banner2>.textwrap{
+    position: absolute;
+    text-align: center;
+    top: 75px; left: 186px;
+}
+.banner2>.textwrap>.text{
+    color: #DAD8CE;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: var(--kor);
+}
+.banner2>.textwrap>.title{
+    margin-top: -16px;
+    font-size: 90px;
+    font-family: var(--eng);
+    line-height: 1.5;
+    color: var(--gray_100);
+    font-weight: 500;
+}
+.banner2>.textwrap>.btn{
+    display: inline-block;
+    color: #4F625B;
+    background-color: #D2D1CA;
+    padding: 6px 52px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.slidebtn{
+    position: absolute;
+    right: 42px; bottom: 33px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.slidebtn>.btn1{
+    display: inline-block;
+    background-color: var(--gray_200);
+    width: 10px; height: 10px;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+.slidebtn>.btn2{
+    display: inline-block;
+    background-color: var(--gray_600);
+    width: 10px; height: 10px;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+.slidebtn>.playbtn{
+    width: 13px;height: 13px;
+    display: inline-block;
+    background-image: url(/imgs/List/icon-play.png);
 }

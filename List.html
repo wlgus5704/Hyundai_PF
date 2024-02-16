@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyundai Cars</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundai All Models</title>
+
+    <script src="/script/listScript.js?ver=220610"></script>
+    <link rel="stylesheet" href="/css/listStyle.css">
+    <!-- ko font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- ko title font -->
+    <link href="https://webfontworld.github.io/gonggames/EsaManru.css" rel="stylesheet">
+    <!-- en font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/488f713ae9.js" crossorigin="anonymous"></script>
+    <!-- banner font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -54,16 +76,151 @@
         </div>
     </header>
     <div class="subVisual">
-        <span>현대자동차 서비스 프로그램 안내</span>
+        <span>Hyundai All Models</span>
     </div>
     <ul class="submenu2">
-        <li><a href="#" class="on">서비스 네트워크</a></li>
-        <li><a href="#">블루 멤버스</a></li>
-        <li><a href="#">서비스 맵</a></li>
-        <li><a href="#">서비스 맵</a></li>
+        <li><a href="#philosophy" class="on">수소/전기차</a></li>
+        <li><a href="#hydro">N</a></li>
+        <li><a href="#campain">승용</a></li>
+        <li><a href="#news">SUV</a></li>
+        <li><a href="#news">MPV</a></li>
+        <li><a href="#news">버스</a></li>
+        <li><a href="#news">소형트럭&택시</a></li>
+        <li><a href="#news">트럭</a></li>
+        <li><a href="#news">GENESIS</a></li>
+        <li><a href="#news">CASPER</a></li>
     </ul>
-
-
+    <div class="bodywrap">
+        <div class="filter">
+            <div class="filter1">
+                <h5 class="title">연비</h5>
+                <form>
+                    <div class="inputwrap">
+                    <input class="radio" type="radio" id="mileage1" name="mileage" value="전체" checked>
+                    <label for="mileage1">전체</label><br></div>
+                    <div class="inputwrap">
+                    <input class="radio" type="radio" id="mileage2" name="mileage" value="10~15">
+                    <label for="mileage2">10 ~ 15km/L</label><br></div>
+                    <div class="inputwrap">
+                    <input class="radio" type="radio" id="mileage3" name="mileage" value="15~20">
+                    <label for="mileage3">15 ~ 20km/L</label><br></div>
+                </form>
+            </div>
+            <div class="filter2">
+                <h5 class="title">가격<span>다중선택 가능</span></h5>
+                <form>
+                    <div class="inputwrap">
+                    <input class="checkbox" type="checkbox" id="price1" name="price" value="전체" checked>
+                    <label for="price1">전체</label><br></div>
+                    <div class="inputwrap">
+                    <input class="checkbox" type="checkbox" id="price2" name="price" value="1000~1500">
+                    <label for="price2">1,000 만원 ~ 1,500 만원</label><br></div>
+                    <div class="inputwrap">
+                    <input class="checkbox" type="checkbox" id="price3" name="price" value="1500~2000">
+                    <label for="price3">1,500 만원 ~ 2,000 만원</label><br></div>
+                    <div class="inputwrap">
+                    <input class="checkbox" type="checkbox" id="price4" name="price" value="2000~2500">
+                    <label for="price4">2,000 만원 ~ 2,500 만원</label><br></div>
+                    <div class="inputwrap">
+                    <input class="checkbox" type="checkbox" id="price5" name="price" value="2500~3000">
+                    <label for="price5">2,500 만원 ~ 3,000 만원</label><br></div>
+                </form>
+            </div>
+            <div class="filter3">
+                <h5 class="title">배기량</h5>
+                <form>
+                    <div class="inputwrap">
+                    <input class="radio" type="radio" id="engine1" name="mileage" value="전체" checked>
+                    <label for="engine1">전체</label><br></div>
+                    <div class="inputwrap">
+                    <input class="radio" type="radio" id="engine2" name="mileage" value="1500~2000">
+                    <label for="engine2">1,500 cc ~ 2,000 cc</label><br></div>
+                    <div class="inputwrap">
+                    <input class="radio" type="radio" id="engine3" name="mileage" value="2000">
+                    <label for="engine3">2,000 cc ~ </label><br></div>
+                </form>
+            </div>
+            <div class="filter4">
+                <h5 class="title">색상<span>다중선택 가능</span></h5>
+                <form>
+                    <input class="color" type="checkbox" id="color1" name="color" value="전체" checked>
+                    <input class="color" type="checkbox" id="color2" name="color" value="white">
+                    <input class="color" type="checkbox" id="color3" name="color" value="gray">
+                    <input class="color" type="checkbox" id="color4" name="color" value="black">
+                    <input class="color" type="checkbox" id="color5" name="color" value="red">
+                    <input class="color" type="checkbox" id="color6" name="color" value="blue">
+                    <input class="color" type="checkbox" id="color7" name="color" value="gold">
+                </form>
+            </div>
+        </div>
+        <div class="carswrap">
+            <div class="passenger">
+                <div>
+                    <div class="conwrap">
+                        <div class="leftwrap">
+                            <h2>더 뉴 아반떼</h2>
+                            <p>지금, 더 매력적인 AVANTE</p>
+                            <div class="textwrap">
+                                <div>
+                                    <p class="title">가격</p>
+                                    <p class="body">1,975 만원 ~</p>
+                                </div>
+                                <div>
+                                    <p class="title">연비</p>
+                                    <p class="body">~15,7km/L</p>
+                                </div>
+                                <div>
+                                    <p class="title">배기량</p>
+                                    <p class="body">~1,598cc</p>
+                                </div>
+                                <div>
+                                    <p class="title">승차인원</p>
+                                    <p class="body">5명</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rwrap"></div>
+                    </div>
+                    <div class="btnwrap">
+                        <div class="mainbtn"><a href="#">구매 상담</a></div>
+                        <div class="mainbtn"><a href="#">내 차 만들기</a></div>
+                        <div class="mainbtn"><a href="#">시승 신청</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="quickmenu">
+            <div class="menuwrap">
+                <a id="qmenu1"><div id="qicon1"></div>내 차 만들기</a>
+                <a id="qmenu2"><div id="qicon2"></div>구매상담</a>
+                <a id="qmenu3"><div id="qicon3"></div>시승신청</a>
+                <a id="qmenu4"><div id="qicon4"></div>구매혜택</a>
+                <a id="qmenu5"><div id="qicon5"></div>TOP</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="bannerwrap">
+            <a  href="#" class="banner1">
+                <div class="title">GENESIS</div>
+                <p class="text">역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 제네시스</p>
+                <div class="btn">더보기<span></span></div>
+            </a>
+            <a  href="#" class="banner2">
+                <div class="textwrap">
+                    <div class="text">강인하고 아이코닉한 SUV</div>
+                    <div class="title">CASPER</div>
+                    <div class="btn">캐스퍼 더 알아보기</div>
+                </div>
+            </a>
+            <div class="slidebtn">
+                <a class="btn1"></a>
+                <a class="btn2"></a>
+                <a class="playbtn"></a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -154,7 +311,6 @@
             </div>
         </div>
     </footer>  
-
 
 
 

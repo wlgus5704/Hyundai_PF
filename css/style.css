@@ -26,6 +26,12 @@ body{
     width: 1920px;
     background-color: #101527;
 }
+h1,h2,h3,h4,h5,p{
+    line-height: 1.5;
+}
+html{
+    scroll-behavior: smooth;
+}
 /* --------------------- Main */
 main{
     width: 100%;
@@ -349,7 +355,7 @@ main>.slidewarp>div{
     color: var(--gray_100, #F4F4F4);
     font-size: 28px;
     line-height: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-shadow: 0 0 10px var(--mint_100);
 }
 .hydrowrap>.carwrap>.carswrap>.hydro_on h4{
@@ -653,7 +659,7 @@ main>.slidewarp>div{
     height: 5px;
     background: #4B4E5B;
     position: absolute;
-    left: -140px; top: 326px;
+    left: -140px; top: 336px;
     z-index: 0;
 }
 .shopNav{
@@ -778,7 +784,7 @@ main>.slidewarp>div{
     color: var(--gray_200);
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 .shopwarp>div>div>p{
     font-family: var(--kor);
@@ -934,7 +940,7 @@ main>.slidewarp>div{
     font-style: 18px;
     font-family: var(--kor);
     color: var(--gray_500);
-    padding-top: 32px;
+    padding-top: 30px;
 }
 .events>.ebtnwrap>.eventswrap>ul>li>a>.Etext>h4{
     font-family: var(--kor);
@@ -1042,7 +1048,7 @@ main>.slidewarp>div{
 }
 
 
-/* --------------------- Footer */
+/* Footer */
 footer{
     width: 1920px;height: 630px;
     background-color: #090B15;
@@ -1063,6 +1069,7 @@ footer> .up > h3{
     font-size: 15px;
     font-weight: 600;
     margin-top: 124px;
+    margin-left: 0;
 }
 footer>.up h3{
     margin-right: 120px;
@@ -1136,15 +1143,22 @@ footer>.down>.footerwrap>.contactus>li{
     font-weight: 300;
     padding-bottom: 28px;
 }
+.footerwrap{
+    margin: 0;
+}
+.footerwrap>.contactus, .information, .sustain_bus, .ir_infor{
+    margin: 0;
+}
 .footerwrap>ul{
     margin-top: 37px;
 }
 .footerwrap>.com_infor{
-    margin-left: 257px;
+    margin-left: 290px;
+    margin-right: 0;
     padding-right: 109px;
 }
-.footerwrap>.sustain_bus{
-    padding-left: 104px;
+.footerwrap>.ir_infor{
+    padding-right: 104px;
 }
 .footerwrap>ul>li>a{
     display: inline-block;
@@ -1204,7 +1218,7 @@ footer>.down>.icons>span{
     opacity: 0;
     transition: all 0.3;
 }
-.icons>.familysite>.drop.active {
+.icons>.familysite>.drop.active{
     opacity: 1;
 }
 .drop>li>a{
@@ -1215,7 +1229,6 @@ footer>.down>.icons>span{
     font-weight: 300;
     line-height: 2.5;
 }
-
 .icons>span{
     float: right;
     color: var(--gray_400, #636671);
@@ -1224,3 +1237,5 @@ footer>.down>.icons>span{
     font-weight: 300;
     margin-top: auto;
 }
+
+/* footer FIN */
