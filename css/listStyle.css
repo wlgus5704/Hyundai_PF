@@ -148,9 +148,11 @@ header{
 }
 .submenu2.fixed{
     position: fixed;
-    top: 0;
+    top: 0; 
     width: 1640px;
+    z-index: 5;
 }
+
 .submenu2{
     padding: 0 140px;
     display: flex;
@@ -457,14 +459,273 @@ input{
     display: flex;
     align-items: center;
 }
+/* carswrap */
 .carswrap{
     width: 1285px;
-    margin-top: 100px;
+    margin-top: 35px;
+    box-sizing: content-box;
 }
+.carswrap>div{
+    transition: 0s;
+}
+.passengerwrap>div{
+    border-bottom: 1px solid var(--gray_500);
+    padding-bottom: 36px;
+}
+.passengerwrap>div>div>div>h2{
+    margin-top: 65px;
+    font-family: var(--kor);
+    font-size: 33px;
+    margin-bottom: 4px;
+    line-height: 1.5;
+    color: var(--gray_100);
+    font-weight: 500;
+}
+.passengerwrap>div>div>div>p{
+    color: var(--gray_200);
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: var(--kor);
+    font-weight: 400;
+}
+.passengerwrap>div>div>div>.textwrap{
+    border: 1px solid var(--gray_400);
+    width: 600px; height: 100px;
+    display: flex;
+    float: left;
+    margin-top: 200px;
+}
+.passengerwrap>div>div>div>.textwrap>div{
+    height: 100px;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 0;
+}
+.passengerwrap>div>div>div>.textwrap>.firstdiv{
+    width: 130px;
+}
+.passengerwrap>div>div>div>.textwrap>.lastdiv{
+    width: 100px;
+}
+.passengerwrap>div>div>div>.textwrap>div>.title{
+    font-family: var(--kor);
+    font-size: 20px;
+    color: var(--bluegray_100);
+    font-weight: 400;
+    line-height: 1.5;
+}
+.passengerwrap>div>div>div>.textwrap>div>.body{
+    font-family: var(--kor);
+    color: var(--gray_100);
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.passengerwrap>div>.btnwrap{
+    display: flex;
+    width: 1222px;
+    float: bottom;
+    margin-left: 0;
+}
+
+.passengerwrap>div>.btnwrap>.mainbtn>a{
+    display: inline-block;
+    background-color: #D9D9D910;
+    border: 1px solid var(--gray_500);
+    font-weight: 500;
+    font-size: 20px;    
+    width: 364px;
+    color: var(--gray_100);
+    padding: 14px;
+    text-align: center;
+    margin-right: 22px;
+}
+.passengerwrap>div>.btnwrap>.mainbtn>a:hover{
+    color: var(--mint_100);
+    background-color: transparent;
+    border: 1px solid var(--gray_300);
+    box-shadow: 0 0 3px var(--mint_100);
+}
+.passenger6{
+    border-bottom: 0px !important;
+    margin-bottom: 0 !important;
+}
+/* 2단 suv */
+.suvwrap{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+.suvwrap>div{
+    border-bottom: 1px solid var(--gray_500);
+    padding-bottom: 36px;
+}
+.suvwrap>div>div>div>h2{
+    margin-top: 65px;
+    font-family: var(--kor);
+    font-size: 33px;
+    margin-bottom: 4px;
+    line-height: 1.5;
+    color: var(--gray_100);
+    font-weight: 500;
+}
+.suvwrap>div>div>div>p{
+    color: var(--gray_200);
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: var(--kor);
+    font-weight: 400;
+}
+.suvwrap>div>div>div>.textwrap{
+    border: 1px solid var(--gray_400);
+    width: 600px; height: 100px;
+    display: flex;
+    float: left;
+    margin-top: 200px;
+}
+.suvwrap>div>div>div>.textwrap>div{
+    height: 100px;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 0;
+}
+.suvwrap>div>div>div>.textwrap>.firstdiv{
+    width: 130px;
+}
+.suvwrap>div>div>div>.textwrap>.lastdiv{
+    width: 100px;
+}
+.suvwrap>div>div>div>.textwrap>div>.title{
+    font-family: var(--kor);
+    font-size: 20px;
+    color: var(--bluegray_100);
+    font-weight: 400;
+    line-height: 1.5;
+}
+.suvwrap>div>div>div>.textwrap>div>.body{
+    font-family: var(--kor);
+    color: var(--gray_100);
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.suvwrap>div>.btnwrap{
+    display: flex;
+    width: 1222px;
+    float: bottom;
+    margin-left: 0;
+}
+
+.suvwrap>div>.btnwrap>.mainbtn>a{
+    display: inline-block;
+    background-color: #D9D9D910;
+    border: 1px solid var(--gray_500);
+    font-weight: 500;
+    font-size: 20px;    
+    width: 364px;
+    color: var(--gray_100);
+    padding: 14px;
+    text-align: center;
+    margin-right: 22px;
+}
+.suvwrap>div>.btnwrap>.mainbtn>a:hover{
+    color: var(--mint_100);
+    background-color: transparent;
+    border: 1px solid var(--gray_300);
+    box-shadow: 0 0 3px var(--mint_100);
+}
+.suv8{
+    border-bottom: 0px !important;
+    margin-bottom: 0 !important;
+}
+
+/* car Img */
+#carimg1{
+    background-image: url(/imgs/List/car1.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg2{
+    background-image: url(/imgs/List/car2.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg3{
+    background-image: url(/imgs/List/car3.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg4{
+    background-image: url(/imgs/List/car4.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg5{
+    background-image: url(/imgs/List/car5.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg6{
+    background-image: url(/imgs/List/car6.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg7{
+    background-image: url(/imgs/List/car7.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg8{
+    background-image: url(/imgs/List/car8.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg9{
+    background-image: url(/imgs/List/car9.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg10{
+    background-image: url(/imgs/List/car10.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg11{
+    background-image: url(/imgs/List/car11.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg12{
+    background-image: url(/imgs/List/car12.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg13{
+    background-image: url(/imgs/List/car13.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+#carimg14{
+    background-image: url(/imgs/List/car14.png);
+    width: 610px; height: 340px;
+    margin-right: 10px; margin-bottom: 10px;
+}
+
+
+/* quick menu */
 .quickmenu{
     width: 140px;
+    margin: 0 auto;
     margin-top: 70px;
     align-items: center;
+    margin-left: 20px;
+}
+.quickmenu>.menuwrap.qfixed{
+    position: fixed;
+    top: 120px;
+    margin-left: 20px;
+    width: 90px;
+    z-index: 5;
 }
 .quickmenu>.menuwrap{
     width: 90px;
@@ -535,6 +796,9 @@ input{
     background-image: url(/imgs/List/icon-top.svg);
 }
 
+
+
+
 /* banner */
 .banner, .banner1, .banner2{
     width: 1920px;
@@ -543,9 +807,10 @@ input{
 .banner{
     position: relative;
     overflow: hidden;
+    margin-top: 180px;
 }
 .bannerwrap{
-    width: 3840px;
+    width: 7680px;
     height: 330px;
     display: flex;
 }
@@ -630,22 +895,24 @@ input{
     display: flex;
     align-items: center;
 }
-.slidebtn>.btn1{
+.slidebtn>a.on{
     display: inline-block;
     background-color: var(--gray_200);
-    width: 10px; height: 10px;
+    width: 12px; height: 12px;
     border-radius: 10px;
     margin-right: 8px;
 }
-.slidebtn>.btn2{
+.slidebtn>a{
     display: inline-block;
     background-color: var(--gray_600);
-    width: 10px; height: 10px;
+    width: 12px; height: 12px;
     border-radius: 10px;
     margin-right: 8px;
 }
 .slidebtn>.playbtn{
-    width: 13px;height: 13px;
+    width: 16px;height: 16px;
     display: inline-block;
-    background-image: url(/imgs/List/icon-play.png);
+    background-color: transparent;
+    background-image: url(/imgs/List/icon-pause.png);
+    margin-right: 0;
 }
