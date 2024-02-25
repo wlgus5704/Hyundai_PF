@@ -107,18 +107,32 @@ window.onload = function(){
 
     //hydro
     var hydro = document.querySelectorAll('.hydrowrap>div');
+    let h4 = document.querySelectorAll('.hydrowrap>div>h4');
+    let p = document.querySelectorAll('.hydrowrap>div>p');
     var active = 'active';
     var def = 'def';
 
     for(let i =0; i< hydro.length; i++){
         hydro[i].addEventListener('mouseenter', function(){
+            
+
             for(let j=0; j<hydro.length; j++){
                 hydro[j].classList.remove(active);
                 hydro[j].classList.add(def);
+                h4[j].style.opacity = 0;
+                p[j].style.opacity = 0;
             };
+            
             hydro[i].style.transition = "ease-in 0.6s";
             hydro[i].classList.add(active);
             hydro[i].classList.remove(def);
+            
+            setTimeout(()=>{
+                h4[i].style.opacity = 1;
+                p[i].style.opacity = 1;
+                h4[i].style.transition = 'all 0.6s';
+                p[i].style.transition = 'all 0.6s';
+            },400);
         });
     };
 

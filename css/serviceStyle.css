@@ -173,8 +173,10 @@ header{
     color: var(--gray_100);
     font-weight: 500;
 }
+#serviceNetwork{
+    padding-top: 120px;
+}
 #serviceNetwork>h1{
-    margin-top: 124px;
     margin-bottom: 16px;
     color: var(--gray_100);
     font-weight: 300;
@@ -305,7 +307,8 @@ header{
 }
 
 #blueMembers{
-    padding-top: 190px;
+    padding-top: 200px;
+    box-sizing: border-box;
 }
 #blueMembers>h1{
     margin-top: 124px;
@@ -591,7 +594,7 @@ footer>.down>.icons>span{
     border-radius: 30px;
 }
 #banner{
-    margin-top: 168px;
+    margin-top: 120px;
     margin-bottom: 200px;
     background-color: #FFFFF5;
     width: 1920px;

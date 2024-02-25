@@ -167,7 +167,7 @@ window.onload = function(){
     let leftBtn = document.querySelector('.hydro_LeftButton>a');
     let rightBtn = document.querySelector('.hydro_RightButton>a');
 
-    leftBtn.addEventListener('click', function(){
+    rightBtn.addEventListener('click', function(){
         event.preventDefault();
         carswrap.style.transition = 'all 0.6s';
         currentWidth += slidewidth;
@@ -190,7 +190,7 @@ window.onload = function(){
         };
     });
 
-    rightBtn.addEventListener('click', function(){
+    leftBtn.addEventListener('click', function(){
         event.preventDefault();
         carswrap.style.transition = 'all 0.6s';
         currentWidth -= slidewidth;
@@ -506,7 +506,7 @@ window.onload = function(){
         eventWrap.prepend(con);
     }
 
-    Elbtn.addEventListener('click', function(event) {
+    Erbtn.addEventListener('click', function(event) {
         event.preventDefault();
         Eindex++;
         eventWrap.style.marginLeft = `-${Eindex * 1640}px`;
@@ -523,7 +523,7 @@ window.onload = function(){
         };
     });
     
-    Erbtn.addEventListener('click', function(event) {
+    Elbtn.addEventListener('click', function(event) {
         event.preventDefault();
 
         Eindex--;

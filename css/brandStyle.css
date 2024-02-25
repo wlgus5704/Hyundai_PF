@@ -362,8 +362,9 @@ footer>.down>.icons>span{
     font-weight: 500;
 }
 #philosophy{
-    margin-top: 150px;
-    height: 2036px;
+    padding-top: 140px;
+    height: 2030px;
+    box-sizing: border-box;
 }
 #philosophy>div{
     width: 1640px;
@@ -586,9 +587,10 @@ h3{
 }
 #hydro{
     background-color: #EBECEE;
-    width: 1920px; height: 910px;
+    width: 1920px; height: 900px;
     margin: 0 140;
     padding-top: 140px;
+    box-sizing: border-box;
 }
 #hydro>h1{
     text-align: center;
@@ -627,8 +629,12 @@ h3{
     margin-top: 50px;
     width: 1640px;
 }
+.hydrowrap>div{
+    overflow: hidden;
+    height: 476px;
+}
 .hydrowrap>.def{
-    width: 176px; height: 476px;
+    width: 176px;
 }
 .hydrowrap>.active{
     width: 1030px;
@@ -707,11 +713,13 @@ h3{
 }
 
 #campain{
-    padding-top: 200px;
+    padding-top: 240px;
     background-color: #EBECEE;
-    width: 1640px; height: 1350px;
+    width: 1920px; height: 1393px;
     padding-left: 140px; 
     padding-right: 140px;
+    box-sizing: border-box;
+
 }
 #campain>h1{
     text-align: center;
@@ -812,7 +820,11 @@ h3{
 }
 #news{
     background-color: #EBECEE;
-    padding-top: 235px;
+    padding-top: 240px;
+    box-sizing: border-box;
+    width: 1920px;
+    height: 900px;
+    padding-bottom: 120px;
 }
 #news>h1{
     text-align: center;

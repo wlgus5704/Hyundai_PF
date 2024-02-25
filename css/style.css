@@ -211,9 +211,9 @@ main>.slidewarp>div{
 .hydro{
     margin-top: 160px;
     width: 1920px;
-    height: 1100px;
+    height: 985px;
     text-align: center;
-    /* overflow: hidden; */
+    box-sizing: border-box;
 }
 .hydro>h1{
     color: var(--gray_100);
@@ -291,13 +291,12 @@ main>.slidewarp>div{
     display: flex;
     margin: 0 auto;
     width: 8840px;
-    margin-top: 140px;   
+    padding-top: 140px;   
 }
 
 .hydrowrap>.carwrap>.carswrap>div{
     align-items: center;
     width: 480px;
-    height: 800px;
     overflow: hidden;
     text-align: center;
 }
@@ -325,13 +324,13 @@ main>.slidewarp>div{
 .hydrowrap>.carwrap>.carswrap>.hydro_on>.buttonwrap{
     display: flex;
     text-align: center;
-    height: 55px;
+    height: 58px;
 }
 .hydrowrap>.carwrap>.carswrap>.hydro_on>.buttonwrap>div{
     margin: 0 auto;
     background-image: url(/imgs/Main/Hydro/hydro_def.png);
     width: 245px;
-    height: 55px;
+    height: 58px;
 }
 .hydrowrap>.carwrap>.carswrap>.hydro_on>.buttonwrap>div:hover{
     background-image: url(/imgs/Main/Hydro/hydro_hover.png);
@@ -376,8 +375,9 @@ main>.slidewarp>div{
 
 .best{
     width: 1920px;
-    height: 1080px;
-    margin-top: 90px;
+    height: 1142px;
+    padding-top: 242px;
+    box-sizing: border-box;
 }
 .best>h1{
     color: var(--gray_100);
@@ -410,7 +410,7 @@ main>.slidewarp>div{
     border-bottom: var(--gray_100) 3px solid;
 }
 .best>.bestwrap{
-    width: 1640px; height: 860px;
+    width: 1640px; height: 800px;
     display: flex;
     box-sizing: border-box;
 }
@@ -578,14 +578,15 @@ main>.slidewarp>div{
 /* --------------------- RECOM */
 .recom {
     width: 1920px;
-    height: 678px;
-    margin-top: 124px;
+    height: 672px;
+    padding-top: 242px;
     text-align: center;
     position: relative;
+    box-sizing: border-box;
 }
 .recom_absol{
     position: absolute;
-    top: 116px;
+    top: 347px;
     left: 638px;
 }
 .recom_absol>h1{
@@ -632,8 +633,10 @@ main>.slidewarp>div{
 
 /* shop */
 .shop{
-    width: 1640px; height: 1308px;
+    width: 1640px; height: 1380px;
     position: relative;
+    box-sizing: border-box;
+    padding-top: 242px;
 }
 .shop>h1{
     color: var(--gray_100);
@@ -641,7 +644,6 @@ main>.slidewarp>div{
     font-size: 42px;
     font-weight: 500;
     text-align: center;
-    padding-top: 100px;
 }
 .shop>h2{
     color: var(--gray_300);
@@ -659,7 +661,7 @@ main>.slidewarp>div{
     height: 5px;
     background: #4B4E5B;
     position: absolute;
-    left: -140px; top: 336px;
+    left: -140px; top: 478px;
     z-index: 0;
 }
 .shopNav{
@@ -870,6 +872,8 @@ main>.slidewarp>div{
 /* --------------------- EVENT */
 .events{
     width: 1920px; height: 850px;
+    box-sizing: border-box;
+    padding-top: 242px;
 }
 .events>h1{
     color: var(--gray_100);
@@ -877,7 +881,6 @@ main>.slidewarp>div{
     font-size: 42px;
     font-weight: 500;
     text-align: center;
-    padding-top: 100px;
 }
 .events>h2{
     color: var(--gray_300);
@@ -985,7 +988,10 @@ main>.slidewarp>div{
 .banner{
     width: 1920px; height: 336px;
     background-image: url(/imgs/Main/Banner/Banner_IMG.jpg);
+    background-repeat: no-repeat;
     position: relative;
+    box-sizing: border-box;
+    margin-top: 242px;
 }
 .banner>.bannerwrap{
     position: absolute;
