@@ -57,7 +57,7 @@ main{
     position: absolute;
     top: -20px;
     left: -140px;
-    background-image: url(/imgs/Main/Main_V/menubg.png);
+    background-image: url(../imgs/Main/Main_V/menubg.png);
     opacity: 0.9;
     z-index: -1;
     transition: all 500ms;
@@ -256,10 +256,10 @@ main>.slidewarp>div{
 .hydrowrap>.hydro_LeftButton>a{
     display: inline-block;
     width: 100%;height: 100%;
-    background-image: url(/imgs/Main/Hydro/Left.png);
+    background-image: url(../imgs/Main/Hydro/Left.png);
 }
 .hydrowrap>.hydro_LeftButton>a:hover{
-    background-image: url(/imgs/Main/Hydro/Left_hover.png);
+    background-image: url(../imgs/Main/Hydro/Left_hover.png);
 }
 .hydrowrap>.hydro_RightButton {
     margin-right: 65px;
@@ -269,10 +269,10 @@ main>.slidewarp>div{
 .hydrowrap>.hydro_RightButton>a{
     display: inline-block;
     width: 100%;height: 100%;
-    background-image: url(/imgs/Main/Hydro/Right.png);
+    background-image: url(../imgs/Main/Hydro/Right.png);
 }
 .hydrowrap>.hydro_RightButton>a:hover{
-    background-image: url(/imgs/Main/Hydro/Right_hover.png);
+    background-image: url(../imgs/Main/Hydro/Right_hover.png);
 }
 .hydrowrap>div h4{
     color: var(--gray_500, #575663);
@@ -328,12 +328,12 @@ main>.slidewarp>div{
 }
 .hydrowrap>.carwrap>.carswrap>.hydro_on>.buttonwrap>div{
     margin: 0 auto;
-    background-image: url(/imgs/Main/Hydro/hydro_def.png);
+    background-image: url(../imgs/Main/Hydro/hydro_def.png);
     width: 245px;
     height: 58px;
 }
 .hydrowrap>.carwrap>.carswrap>.hydro_on>.buttonwrap>div:hover{
-    background-image: url(/imgs/Main/Hydro/hydro_hover.png);
+    background-image: url(../imgs/Main/Hydro/hydro_hover.png);
 }
 .hydrowrap>.carwrap>.carswrap>.hydro_on>.buttonwrap>div>a{
     display: inline-block;
@@ -419,13 +419,13 @@ main>.slidewarp>div{
     width: 80px; 
     height: 860px;
     margin-top: 224px;
-    background-image: url(/imgs/Main/Hydro/Left.png);
+    background-image: url(../imgs/Main/Hydro/Left.png);
     background-repeat: no-repeat;
     margin-left: 0;
     margin-right: 16px;
 }
 .best>.bestwrap>.Blbtn>a:hover{
-    background-image: url(/imgs/Main/Hydro/Left_hover.png);
+    background-image: url(../imgs/Main/Hydro/Left_hover.png);
 }
 .best>.bestwrap>.Brbtn>a{
     display: inline-block;
@@ -433,13 +433,13 @@ main>.slidewarp>div{
     height: 860px;
     margin-top: 224px;
     text-align: center;
-    background-image: url(/imgs/Main/Hydro/Right.png);
+    background-image: url(../imgs/Main/Hydro/Right.png);
     background-repeat: no-repeat;
     margin-right: 0;
     margin-left: 16px;
 }
 .best>.bestwrap>.Brbtn>a:hover{
-    background-image: url(/imgs/Main/Hydro/Right_hover.png);
+    background-image: url(../imgs/Main/Hydro/Right_hover.png);
 }
 .best>.bestwrap>.bestConwrap{
     width: 1410px;
@@ -470,7 +470,7 @@ main>.slidewarp>div{
     font-size: 20px;
     font-family: var(--kor);
     color: var(--gray_100);
-    background-image: url(/imgs/Main/Best/Title_img.png);
+    background-image: url(../imgs/Main/Best/Title_img.png);
     background-repeat: no-repeat;
     width: 414px;
     height: 108px;
@@ -480,7 +480,7 @@ main>.slidewarp>div{
 }
 .best>.bestwrap>.bestConwrap>div>div>a:hover>h3{
     color: var(--mint_100);
-    background-image: url(/imgs/Main/Best/Title_img_hover.png);
+    background-image: url(../imgs/Main/Best/Title_img_hover.png);
 }
 .best>.bestwrap>.bestConwrap>div>div>ul{
     display: flex;
@@ -506,73 +506,73 @@ main>.slidewarp>div{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car1.png);
+    background-image: url(../imgs/Main/Best/best_car1.png);
 }
 #img1-2{
     width: 470px; height: 420px;
     margin-bottom: 14px;
-    background-image: url(/imgs/Main/Best/best_car2.png);
+    background-image: url(../imgs/Main/Best/best_car2.png);
     background-repeat: no-repeat;
 }
 #img1-3{
     width: 470px; height: 420px;
     margin-bottom: 14px;
-    background-image: url(/imgs/Main/Best/best_car3.png);
+    background-image: url(../imgs/Main/Best/best_car3.png);
     background-repeat: no-repeat;
 } 
 #img2-1{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car2-1.png);
+    background-image: url(../imgs/Main/Best/best_car2-1.png);
 }
 #img2-2{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car2-2.png);
+    background-image: url(../imgs/Main/Best/best_car2-2.png);
 }
 #img2-3{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car2-3.png);
+    background-image: url(../imgs/Main/Best/best_car2-3.png);
 }
 #img3-1{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car3-1.png);
+    background-image: url(../imgs/Main/Best/best_car3-1.png);
 }
 #img3-2{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car3-2.png);
+    background-image: url(../imgs/Main/Best/best_car3-2.png);
 }
 #img3-3{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car3-3.png);
+    background-image: url(../imgs/Main/Best/best_car3-3.png);
 }
 #img4-1{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car4-1.png);
+    background-image: url(../imgs/Main/Best/best_car4-1.png);
 }
 #img4-2{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car4-2.png);
+    background-image: url(../imgs/Main/Best/best_car4-2.png);
 }
 #img4-3{
     width: 470px; height: 420px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/Main/Best/best_car4-3.png);
+    background-image: url(../imgs/Main/Best/best_car4-3.png);
 }
 
 /* --------------------- RECOM */
@@ -618,7 +618,7 @@ main>.slidewarp>div{
 .buttonwrap>a{
     display: inline-block;
     width: 188px;height: 58px;
-    background-image: url(/imgs/Main/Recom/button_def.png);
+    background-image: url(../imgs/Main/Recom/button_def.png);
     color: var(--gray_100, #F4F4F4);
     font-family: var(--kor);
     font-size: 18px;
@@ -627,7 +627,7 @@ main>.slidewarp>div{
     line-height: 54px;
 }
 .buttonwrap>a:hover{
-    background-image: url(/imgs/Main/Recom/button_hover.png);
+    background-image: url(../imgs/Main/Recom/button_hover.png);
     color: var(--mint_100);
 }
 
@@ -729,22 +729,22 @@ main>.slidewarp>div{
     position: absolute;
     left: 400px; top: 800px;
     width: 50px; height: 110px;
-    background-image: url(/imgs/Main/Hydro/Left.png);
+    background-image: url(../imgs/Main/Hydro/Left.png);
     z-index: 2;
 }
 .Slbtn:hover{
-    background-image: url(/imgs/Main/Hydro/Left_hover.png);
+    background-image: url(../imgs/Main/Hydro/Left_hover.png);
 }
 .Srbtn{
     display: inline-block;
     position: absolute;
     width: 50px; height: 110px;
     right: 400px; top: 800px;
-    background-image: url(/imgs/Main/Hydro/Right.png);
+    background-image: url(../imgs/Main/Hydro/Right.png);
     z-index: 2;
 }
 .Srbtn:hover{
-    background-image: url(/imgs/Main/Hydro/Right_hover.png);
+    background-image: url(../imgs/Main/Hydro/Right_hover.png);
 }
 .shopwarp>div{
     display: flex;
@@ -798,76 +798,76 @@ main>.slidewarp>div{
 
 /* img */
 #gift1-1{
-    background-image: url(/imgs/Main/Shop/gift1-1.png);
+    background-image: url(../imgs/Main/Shop/gift1-1.png);
 }
 #gift1-2{
-    background-image: url(/imgs/Main/Shop/gift1-2.png);
+    background-image: url(../imgs/Main/Shop/gift1-2.png);
 }
 #gift1-3{
-    background-image: url(/imgs/Main/Shop/gift1-3.png);
+    background-image: url(../imgs/Main/Shop/gift1-3.png);
 }
 #gift1-4{
-    background-image: url(/imgs/Main/Shop/gift1-4.png);
+    background-image: url(../imgs/Main/Shop/gift1-4.png);
 }
 #gift1-5{
-    background-image: url(/imgs/Main/Shop/gift1-5.png);
+    background-image: url(../imgs/Main/Shop/gift1-5.png);
 }
 #gift1-6{
-    background-image: url(/imgs/Main/Shop/gift1-6.png);
+    background-image: url(../imgs/Main/Shop/gift1-6.png);
 }
 #point1-1{
-    background-image: url(/imgs/Main/Shop/point1-1.png);
+    background-image: url(../imgs/Main/Shop/point1-1.png);
 }
 #point1-2{
-    background-image: url(/imgs/Main/Shop/point1-2.png);
+    background-image: url(../imgs/Main/Shop/point1-2.png);
 }
 #point1-3{
-    background-image: url(/imgs/Main/Shop/point1-3.png);
+    background-image: url(../imgs/Main/Shop/point1-3.png);
 }
 #point1-4{
-    background-image: url(/imgs/Main/Shop/point1-4.png);
+    background-image: url(../imgs/Main/Shop/point1-4.png);
 }
 #point1-5{
-    background-image: url(/imgs/Main/Shop/point1-5.png);
+    background-image: url(../imgs/Main/Shop/point1-5.png);
 }
 #point1-6{
-    background-image: url(/imgs/Main/Shop/point1-6.png);
+    background-image: url(../imgs/Main/Shop/point1-6.png);
 }
 #pro1-1{
-    background-image: url(/imgs/Main/Shop/pro1-1.png);
+    background-image: url(../imgs/Main/Shop/pro1-1.png);
 }
 #pro1-2{
-    background-image: url(/imgs/Main/Shop/pro1-2.png);
+    background-image: url(../imgs/Main/Shop/pro1-2.png);
 }
 #pro1-3{
-    background-image: url(/imgs/Main/Shop/pro1-3.png);
+    background-image: url(../imgs/Main/Shop/pro1-3.png);
 }
 #pro1-4{
-    background-image: url(/imgs/Main/Shop/pro1-4.png);
+    background-image: url(../imgs/Main/Shop/pro1-4.png);
 }
 #pro1-5{
-    background-image: url(/imgs/Main/Shop/pro1-5.png);
+    background-image: url(../imgs/Main/Shop/pro1-5.png);
 }
 #pro1-6{
-    background-image: url(/imgs/Main/Shop/pro1-6.png);
+    background-image: url(../imgs/Main/Shop/pro1-6.png);
 }
 #arti1-1{
-    background-image: url(/imgs/Main/Shop/arti1-1.png);
+    background-image: url(../imgs/Main/Shop/arti1-1.png);
 }
 #arti1-2{
-    background-image: url(/imgs/Main/Shop/arti1-2.png);
+    background-image: url(../imgs/Main/Shop/arti1-2.png);
 }
 #arti1-3{
-    background-image: url(/imgs/Main/Shop/arti1-3.png);
+    background-image: url(../imgs/Main/Shop/arti1-3.png);
 }
 #arti1-4{
-    background-image: url(/imgs/Main/Shop/arti1-4.png);
+    background-image: url(../imgs/Main/Shop/arti1-4.png);
 }
 #arti1-5{
-    background-image: url(/imgs/Main/Shop/arti1-5.png);
+    background-image: url(../imgs/Main/Shop/arti1-5.png);
 }
 #arti1-6{
-    background-image: url(/imgs/Main/Shop/arti1-6.png);
+    background-image: url(../imgs/Main/Shop/arti1-6.png);
 }
 /* --------------------- EVENT */
 .events{
@@ -900,21 +900,21 @@ main>.slidewarp>div{
     display: inline-block;
     width: 140px;height: 285px;
     margin: 88px 45px;
-    background-image: url(/imgs/Main/Hydro/Left.png);
+    background-image: url(../imgs/Main/Hydro/Left.png);
     background-repeat: no-repeat;
 }
 .events>.ebtnwrap>.lbtn>a:hover{
-    background-image: url(/imgs/Main/Hydro/Left_hover.png);
+    background-image: url(../imgs/Main/Hydro/Left_hover.png);
 }
 .events>.ebtnwrap>.rbtn>a{
     display: inline-block;
     width: 140px;height: 285px;
     margin: 88px 45px;
-    background-image: url(/imgs/Main/Hydro/Right.png);
+    background-image: url(../imgs/Main/Hydro/Right.png);
     background-repeat: no-repeat;
 }
 .events>.ebtnwrap>.rbtn>a:hover{
-    background-image: url(/imgs/Main/Hydro/Right_hover.png);
+    background-image: url(../imgs/Main/Hydro/Right_hover.png);
 }
 .events>.ebtnwrap>.eventswrap{
     width: 1640px; height: 407px;
@@ -961,33 +961,33 @@ main>.slidewarp>div{
 }
 #eimg1{
     width: 510px; height: 285px;
-    background-image: url(/imgs/Main/Events/event_img1.jpg);
+    background-image: url(../imgs/Main/Events/event_img1.jpg);
 }
 #eimg2{
     width: 510px; height: 285px;
-    background-image: url(/imgs/Main/Events/event_img2.jpg);
+    background-image: url(../imgs/Main/Events/event_img2.jpg);
 }
 #eimg3{
     width: 510px; height: 285px;
-    background-image: url(/imgs/Main/Events/event_img3.jpg);
+    background-image: url(../imgs/Main/Events/event_img3.jpg);
 }
 #eimg4{
     width: 510px; height: 285px;
-    background-image: url(/imgs/Main/Events/event_img4.jpg);
+    background-image: url(../imgs/Main/Events/event_img4.jpg);
 }
 #eimg5{
     width: 510px; height: 285px;
-    background-image: url(/imgs/Main/Events/event_img5.jpg);
+    background-image: url(../imgs/Main/Events/event_img5.jpg);
 }
 #eimg6{
     width: 510px; height: 285px;
-    background-image: url(/imgs/Main/Events/event_img6.jpg);
+    background-image: url(../imgs/Main/Events/event_img6.jpg);
 }
 
 /* --------------------- Banner */
 .banner{
     width: 1920px; height: 336px;
-    background-image: url(/imgs/Main/Banner/Banner_IMG.jpg);
+    background-image: url(../imgs/Main/Banner/Banner_IMG.jpg);
     background-repeat: no-repeat;
     position: relative;
     box-sizing: border-box;

@@ -59,7 +59,7 @@ header{
     position: absolute;
     top: -20px;
     left: -140px;
-    background-image: url(/imgs/Main/Main_V/menubg.png);
+    background-image: url(../imgs/Main/Main_V/menubg.png);
     opacity: 0.9;
     z-index: -1;
     transition: all 500ms;
@@ -326,7 +326,7 @@ footer>.down>.icons>span{
 /* footer FIN */
 
 .subVisual{
-    background-image: url(/imgs/Brand/sub_v.jpg);
+    background-image: url(../imgs/Brand/sub_v.jpg);
     position: relative;
     width: 1920px; height: 600px;
 }
@@ -419,7 +419,7 @@ h3{
 }
 
 #phimg1{
-    background-image: url(/imgs/Brand/ph1.png);
+    background-image: url(../imgs/Brand/ph1.png);
     width: 740px;
     background-repeat: no-repeat;
     height: 375px;
@@ -427,7 +427,7 @@ h3{
     margin-bottom: 66px;
 }
 #phimg3{
-    background-image: url(/imgs/Brand/ph3.png);
+    background-image: url(../imgs/Brand/ph3.png);
     width: 740px;
     background-repeat: no-repeat;
     height: 375px;
@@ -435,7 +435,7 @@ h3{
     margin-bottom: 66px;
 }
 #phimg2{
-    background-image: url(/imgs/Brand/ph2.png);
+    background-image: url(../imgs/Brand/ph2.png);
     width: 700px;
     margin-left: 120px;
     background-repeat: no-repeat;
@@ -640,35 +640,35 @@ h3{
     width: 1030px;
 }
 #hydro1.def{
-    background-image: url(/imgs/Brand/hydro1_default.jpg);
+    background-image: url(../imgs/Brand/hydro1_default.jpg);
     transition: background-image 0.5s ease;
 }
 #hydro2.def{
-    background-image: url(/imgs/Brand/hydro2_default.jpg);
+    background-image: url(../imgs/Brand/hydro2_default.jpg);
     transition: background-image 0.5s ease;
 }
 #hydro3.def{
-    background-image: url(/imgs/Brand/hydro3_default.jpg);
+    background-image: url(../imgs/Brand/hydro3_default.jpg);
     transition: background-image 0.5s ease;
 }
 #hydro4.def{
-    background-image: url(/imgs/Brand/hydro4_default.jpg);
+    background-image: url(../imgs/Brand/hydro4_default.jpg);
     transition: background-image 0.5s ease;
 }
 #hydro1.active{
-    background-image: url(/imgs/Brand/hydro1_active.jpg);
+    background-image: url(../imgs/Brand/hydro1_active.jpg);
     transition: background-image 0.5s ease;
 }
 #hydro2.active{
-    background-image: url(/imgs/Brand/hydro2_active.jpg);
+    background-image: url(../imgs/Brand/hydro2_active.jpg);
     transition: background-image 0.5s ease;
 }
 #hydro3.active{
-    background-image: url(/imgs/Brand/hydro3_active.jpg);
+    background-image: url(../imgs/Brand/hydro3_active.jpg);
     transition: background-image 0.5s ease;
 }
 #hydro4.active{
-    background-image: url(/imgs/Brand/hydro4_active.jpg);
+    background-image: url(../imgs/Brand/hydro4_active.jpg);
     transition: background-image 0.5s ease;
 }
 .hydrowrap>.active>h4{
@@ -782,7 +782,7 @@ h3{
     margin-right: 44px;
     width: 222px;
     height: 38px;
-    background-image: url(/imgs/Brand/arrow.png);
+    background-image: url(../imgs/Brand/arrow.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     font-weight: 400;
@@ -794,27 +794,27 @@ h3{
     border-bottom: 1px solid var(--gray_200);
 }
 #cam1{
-    background-image: url(/imgs/Brand/cam1.jpg);
+    background-image: url(../imgs/Brand/cam1.jpg);
     width: 400px; height: 135px;
     margin: 0;
 }
 #cam2{
-    background-image: url(/imgs/Brand/cam2.jpg);
+    background-image: url(../imgs/Brand/cam2.jpg);
     width: 400px; height: 135px;
     margin: 0;
 }
 #cam3{
-    background-image: url(/imgs/Brand/cam3.jpg);
+    background-image: url(../imgs/Brand/cam3.jpg);
     width: 400px; height: 135px;
     margin: 0;
 }
 #cam4{
-    background-image: url(/imgs/Brand/cam4.jpg);
+    background-image: url(../imgs/Brand/cam4.jpg);
     width: 400px; height: 135px;
     margin: 0;
 }
 #cam5{
-    background-image: url(/imgs/Brand/cam5.jpg);
+    background-image: url(../imgs/Brand/cam5.jpg);
     width: 400px; height: 135px;
     margin: 0;
 }
@@ -861,7 +861,7 @@ h3{
     display: inline-block;
     width: 140px;
     height: 365px;
-    background-image: url(/imgs/Brand/LeftArrow.png);
+    background-image: url(../imgs/Brand/LeftArrow.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -869,7 +869,7 @@ h3{
     display: inline-block;
     width: 140px;
     height: 365px;
-    background-image: url(/imgs/Brand/rightArrow.png);
+    background-image: url(../imgs/Brand/rightArrow.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -926,54 +926,54 @@ h3{
 
 
 #con1_video1{
-    background-image: url(/imgs/Brand/con1_v1.jpg);
+    background-image: url(../imgs/Brand/con1_v1.jpg);
 }
 
 #con1_video2{
-    background-image: url(/imgs/Brand/con1_v2.jpg);
+    background-image: url(../imgs/Brand/con1_v2.jpg);
 }
 
 #con1_video3{
-    background-image: url(/imgs/Brand/con1_v3.jpg);
+    background-image: url(../imgs/Brand/con1_v3.jpg);
 }
 
 #con1_video4{
-    background-image: url(/imgs/Brand/con1_v4.jpg);
+    background-image: url(../imgs/Brand/con1_v4.jpg);
 }
 
 #con1_video5{
-    background-image: url(/imgs/Brand/con1_v5.jpg);
+    background-image: url(../imgs/Brand/con1_v5.jpg);
 }
 #con1_video6{
-    background-image: url(/imgs/Brand/con1_v6.jpg);
+    background-image: url(../imgs/Brand/con1_v6.jpg);
 }
 #con1_video7{
-    background-image: url(/imgs/Brand/con1_v7.jpg);
+    background-image: url(../imgs/Brand/con1_v7.jpg);
 }
 #con1_video8{
-    background-image: url(/imgs/Brand/con1_v8.jpg);
+    background-image: url(../imgs/Brand/con1_v8.jpg);
 }
 #con2_video1{
-    background-image: url(/imgs/Brand/con2_v1.jpg);
+    background-image: url(../imgs/Brand/con2_v1.jpg);
 }
 #con2_video2{
-    background-image: url(/imgs/Brand/con2_v2.jpg);
+    background-image: url(../imgs/Brand/con2_v2.jpg);
 }
 #con2_video3{
-    background-image: url(/imgs/Brand/con2_v3.jpg);
+    background-image: url(../imgs/Brand/con2_v3.jpg);
 }
 #con2_video4{
-    background-image: url(/imgs/Brand/con2_v4.jpg);
+    background-image: url(../imgs/Brand/con2_v4.jpg);
 }
 #con2_video5{
-    background-image: url(/imgs/Brand/con2_v5.jpg);
+    background-image: url(../imgs/Brand/con2_v5.jpg);
 }
 #con2_video6{
-    background-image: url(/imgs/Brand/con2_v6.jpg);
+    background-image: url(../imgs/Brand/con2_v6.jpg);
 }
 #con2_video7{
-    background-image: url(/imgs/Brand/con2_v7.jpg);
+    background-image: url(../imgs/Brand/con2_v7.jpg);
 }
 #con2_video8{
-    background-image: url(/imgs/Brand/con2_v8.jpg);
+    background-image: url(../imgs/Brand/con2_v8.jpg);
 }

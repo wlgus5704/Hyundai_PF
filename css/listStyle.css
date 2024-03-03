@@ -58,7 +58,7 @@ header{
     position: absolute;
     top: -20px;
     left: -140px;
-    background-image: url(/imgs/Main/Main_V/menubg.png);
+    background-image: url(../imgs/Main/Main_V/menubg.png);
     opacity: 0.9;
     z-index: -1;
     transition: all 500ms;
@@ -134,7 +134,7 @@ header{
 
 /* submenu2 */
 .subVisual{
-    background-image: url(/imgs/List/sub_v.jpg);
+    background-image: url(../imgs/List/sub_v.jpg);
     position: relative;
     width: 1920px; height: 600px;
 }
@@ -641,72 +641,72 @@ input{
 
 /* car Img */
 #carimg1{
-    background-image: url(/imgs/List/car1.png);
+    background-image: url(../imgs/List/car1.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg2{
-    background-image: url(/imgs/List/car2.png);
+    background-image: url(../imgs/List/car2.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg3{
-    background-image: url(/imgs/List/car3.png);
+    background-image: url(../imgs/List/car3.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg4{
-    background-image: url(/imgs/List/car4.png);
+    background-image: url(../imgs/List/car4.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg5{
-    background-image: url(/imgs/List/car5.png);
+    background-image: url(../imgs/List/car5.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg6{
-    background-image: url(/imgs/List/car6.png);
+    background-image: url(../imgs/List/car6.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg7{
-    background-image: url(/imgs/List/car7.png);
+    background-image: url(../imgs/List/car7.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg8{
-    background-image: url(/imgs/List/car8.png);
+    background-image: url(../imgs/List/car8.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg9{
-    background-image: url(/imgs/List/car9.png);
+    background-image: url(../imgs/List/car9.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg10{
-    background-image: url(/imgs/List/car10.png);
+    background-image: url(../imgs/List/car10.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg11{
-    background-image: url(/imgs/List/car11.png);
+    background-image: url(../imgs/List/car11.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg12{
-    background-image: url(/imgs/List/car12.png);
+    background-image: url(../imgs/List/car12.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg13{
-    background-image: url(/imgs/List/car13.png);
+    background-image: url(../imgs/List/car13.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
 #carimg14{
-    background-image: url(/imgs/List/car14.png);
+    background-image: url(../imgs/List/car14.png);
     width: 610px; height: 340px;
     margin-right: 10px; margin-bottom: 10px;
 }
@@ -750,31 +750,31 @@ input{
 }
 #qicon1{
     width: 58px; height: 58px;
-    background-image: url(/imgs/List/icon-car.svg);
+    background-image: url(../imgs/List/icon-car.svg);
 }
 .quickmenu>.menuwrap>a:hover>#qicon1{
-    background-image: url(/imgs/List/icon-car-hover.svg);
+    background-image: url(../imgs/List/icon-car-hover.svg);
 }
 #qicon2{
     width: 58px; height: 58px;
-    background-image: url(/imgs/List/icon-money.svg);
+    background-image: url(../imgs/List/icon-money.svg);
 }
 .quickmenu>.menuwrap>a:hover>#qicon2{
-    background-image: url(/imgs/List/icon-money-hover.svg);
+    background-image: url(../imgs/List/icon-money-hover.svg);
 }
 #qicon3{
     width: 58px; height: 58px;
-    background-image: url(/imgs/List/icon-handle.svg);
+    background-image: url(../imgs/List/icon-handle.svg);
 }
 .quickmenu>.menuwrap>a:hover>#qicon3{
-    background-image: url(/imgs/List/icon-handle-hover.svg);
+    background-image: url(../imgs/List/icon-handle-hover.svg);
 }
 #qicon4{
     width: 58px; height: 58px;
-    background-image: url(/imgs/List/icon-tag.svg);
+    background-image: url(../imgs/List/icon-tag.svg);
 }
 .quickmenu>.menuwrap>a:hover>#qicon4{
-    background-image: url(/imgs/List/icon-tag-hover.svg);
+    background-image: url(../imgs/List/icon-tag-hover.svg);
 }
 #qmenu5{
     display: inline-block;
@@ -793,7 +793,7 @@ input{
 }
 #qicon5{
     width: 36px; height: 36px;
-    background-image: url(/imgs/List/icon-top.svg);
+    background-image: url(../imgs/List/icon-top.svg);
 }
 
 
@@ -815,11 +815,11 @@ input{
     display: flex;
 }
 .banner>.bannerwrap>.banner1{
-    background-image: url(/imgs/List/banner1.jpg);
+    background-image: url(../imgs/List/banner1.jpg);
     position: relative;
 }
 .banner>.bannerwrap>.banner2{
-    background-image: url(/imgs/List/banner2.jpg);
+    background-image: url(../imgs/List/banner2.jpg);
     position: relative;
 }
 .banner1>.title{
@@ -856,7 +856,7 @@ input{
 .banner1>.btn>span{
     background-position: 0 center;
     display: inline-block;
-    background: url(/imgs/List/Icon-doublearrow.png);
+    background: url(../imgs/List/Icon-doublearrow.png);
     width: 30px; height: 30px;
     margin-left: 2px;
 }
@@ -913,6 +913,6 @@ input{
     width: 16px;height: 16px;
     display: inline-block;
     background-color: transparent;
-    background-image: url(/imgs/List/icon-pause.png);
+    background-image: url(../imgs/List/icon-pause.png);
     margin-right: 0;
 }
