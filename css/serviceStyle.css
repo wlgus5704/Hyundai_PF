@@ -154,6 +154,7 @@ header{
     position: fixed;
     top: 0;
     width: 1640px;
+    z-index: 5;
 }
 .submenu2{
     padding: 0 140px;
@@ -270,17 +271,17 @@ header{
 }
 #btn1{
     width: 100px; height: 100px;
-    background-image: url(../imgs/Service/Icon-call.png);
+    background-image: url(../imgs/Service/Icon-call.svg);
     margin-left: 42px; margin-right: 8px;
 }
 #btn2{
     width: 100px; height: 100px;
-    background-image: url(../imgs/Service/Icon-map.png);
+    background-image: url(../imgs/Service/Icon-map.svg);
     margin-left: 42px; margin-right: 8px;
 }
 #btn3{
     width: 100px; height: 100px;
-    background-image: url(../imgs/Service/Icon-bluehands.png);
+    background-image: url(../imgs/Service/Icon-bluehands.svg);
     margin-left: 42px; margin-right: 8px;
 }
 .btnwrap>div{
@@ -642,6 +643,7 @@ footer>.down>.icons>span{
     height: 320px;
     width: 995px;
     background-image: url(../imgs/Service/bannerimg.png);
+    margin-right: 0;
 }
 #serviceMap>h1{
     margin-top: 124px;
