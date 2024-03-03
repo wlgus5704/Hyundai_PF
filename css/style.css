@@ -727,7 +727,7 @@ main>.slidewarp>div{
 .Slbtn{
     display: inline-block;
     position: absolute;
-    left: 400px; top: 800px;
+    left: 400px; top: 940px;
     width: 50px; height: 110px;
     background-image: url(../imgs/Main/Hydro/Left.png);
     z-index: 2;
@@ -739,7 +739,7 @@ main>.slidewarp>div{
     display: inline-block;
     position: absolute;
     width: 50px; height: 110px;
-    right: 400px; top: 800px;
+    right: 400px; top: 940px;
     background-image: url(../imgs/Main/Hydro/Right.png);
     z-index: 2;
 }
